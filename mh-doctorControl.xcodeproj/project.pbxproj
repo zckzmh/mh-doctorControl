@@ -40,6 +40,7 @@
 		FEF689B61CAEBD0C00595F93 /* DoctorFunctionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FEF689B51CAEBD0C00595F93 /* DoctorFunctionViewController.m */; };
 		FEF689BA1CB00CC000595F93 /* DoctorInfoTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = FEF689B81CB00CC000595F93 /* DoctorInfoTableViewCell.m */; };
 		FEF689BB1CB00CC000595F93 /* DoctorInfoTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FEF689B91CB00CC000595F93 /* DoctorInfoTableViewCell.xib */; };
+		FEF689BE1CB0289D00595F93 /* OpenServiceTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FEF689BD1CB0289D00595F93 /* OpenServiceTableViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -121,6 +122,8 @@
 		FEF689B71CB00CC000595F93 /* DoctorInfoTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DoctorInfoTableViewCell.h; sourceTree = "<group>"; };
 		FEF689B81CB00CC000595F93 /* DoctorInfoTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DoctorInfoTableViewCell.m; sourceTree = "<group>"; };
 		FEF689B91CB00CC000595F93 /* DoctorInfoTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DoctorInfoTableViewCell.xib; sourceTree = "<group>"; };
+		FEF689BC1CB0289D00595F93 /* OpenServiceTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OpenServiceTableViewController.h; sourceTree = "<group>"; };
+		FEF689BD1CB0289D00595F93 /* OpenServiceTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OpenServiceTableViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -390,6 +393,8 @@
 				FE27E89C1CA2D4F30036515B /* FamousDoctorSearchTableViewController.m */,
 				FEF689B41CAEBD0C00595F93 /* DoctorFunctionViewController.h */,
 				FEF689B51CAEBD0C00595F93 /* DoctorFunctionViewController.m */,
+				FEF689BC1CB0289D00595F93 /* OpenServiceTableViewController.h */,
+				FEF689BD1CB0289D00595F93 /* OpenServiceTableViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -643,6 +648,7 @@
 				FE3EEDA21CA8DB7600A5B685 /* ChineseInclude.m in Sources */,
 				FE0FA0261C9F9B290042FC3E /* TeamViewController.m in Sources */,
 				FE3EEDA71CA8DB7600A5B685 /* PinYinForObjc.m in Sources */,
+				FEF689BE1CB0289D00595F93 /* OpenServiceTableViewController.m in Sources */,
 				FE3EEDA31CA8DB7600A5B685 /* ChineseToPinyinResource.m in Sources */,
 				FE97C13A1CAB7B7F00AAD915 /* FamousDoctorTableViewCell.m in Sources */,
 				FE0FA0221C9F9B290042FC3E /* MainViewController.m in Sources */,
