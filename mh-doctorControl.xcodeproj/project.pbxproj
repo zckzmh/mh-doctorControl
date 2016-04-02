@@ -1,0 +1,903 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		FCC0E1332A790B8FDD77E387 /* libPods-mh-doctorControl.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9E3A543EE435231804220E47 /* libPods-mh-doctorControl.a */; };
+		FE09434C1C856D6000D6ABC7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FE09434B1C856D6000D6ABC7 /* main.m */; };
+		FE0943651C856D6000D6ABC7 /* mh_doctorControlTests.m in Sources */ = {isa = PBXBuildFile; fileRef = FE0943641C856D6000D6ABC7 /* mh_doctorControlTests.m */; };
+		FE0943701C856D6000D6ABC7 /* mh_doctorControlUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = FE09436F1C856D6000D6ABC7 /* mh_doctorControlUITests.m */; };
+		FE09439E1C8580CB00D6ABC7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FE09439A1C8580CB00D6ABC7 /* LaunchScreen.storyboard */; };
+		FE0943A31C85D3DD00D6ABC7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FE0943A21C85D3DD00D6ABC7 /* Assets.xcassets */; };
+		FE0FA0211C9F9B290042FC3E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FE0FA0031C9F9B290042FC3E /* AppDelegate.m */; };
+		FE0FA0221C9F9B290042FC3E /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FE0FA0071C9F9B290042FC3E /* MainViewController.m */; };
+		FE0FA0231C9F9B290042FC3E /* DoctorInfoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FE0FA00B1C9F9B290042FC3E /* DoctorInfoViewController.m */; };
+		FE0FA0241C9F9B290042FC3E /* DoctorInfoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FE0FA00C1C9F9B290042FC3E /* DoctorInfoViewController.xib */; };
+		FE0FA0251C9F9B290042FC3E /* FocusViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FE0FA00E1C9F9B290042FC3E /* FocusViewController.m */; };
+		FE0FA0261C9F9B290042FC3E /* TeamViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FE0FA0101C9F9B290042FC3E /* TeamViewController.m */; };
+		FE0FA0271C9F9B290042FC3E /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FE0FA0161C9F9B290042FC3E /* HomeViewController.m */; };
+		FE0FA0281C9F9B290042FC3E /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FE0FA0171C9F9B290042FC3E /* HomeViewController.xib */; };
+		FE0FA0291C9F9B290042FC3E /* IndividalSettingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FE0FA01D1C9F9B290042FC3E /* IndividalSettingViewController.m */; };
+		FE0FA02A1C9F9B290042FC3E /* IndividalSettingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FE0FA01E1C9F9B290042FC3E /* IndividalSettingViewController.xib */; };
+		FE27E89D1CA2D4F40036515B /* FamousDoctorSearchTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FE27E89C1CA2D4F30036515B /* FamousDoctorSearchTableViewController.m */; };
+		FE27E8A01CA2DD850036515B /* MHSearchBar.m in Sources */ = {isa = PBXBuildFile; fileRef = FE27E89F1CA2DD850036515B /* MHSearchBar.m */; };
+		FE3EEDA21CA8DB7600A5B685 /* ChineseInclude.m in Sources */ = {isa = PBXBuildFile; fileRef = FE3EED941CA8DB7600A5B685 /* ChineseInclude.m */; };
+		FE3EEDA31CA8DB7600A5B685 /* ChineseToPinyinResource.m in Sources */ = {isa = PBXBuildFile; fileRef = FE3EED961CA8DB7600A5B685 /* ChineseToPinyinResource.m */; };
+		FE3EEDA51CA8DB7600A5B685 /* NSString+PinYin4Cocoa.m in Sources */ = {isa = PBXBuildFile; fileRef = FE3EED9A1CA8DB7600A5B685 /* NSString+PinYin4Cocoa.m */; };
+		FE3EEDA61CA8DB7600A5B685 /* PinyinFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = FE3EED9C1CA8DB7600A5B685 /* PinyinFormatter.m */; };
+		FE3EEDA71CA8DB7600A5B685 /* PinYinForObjc.m in Sources */ = {isa = PBXBuildFile; fileRef = FE3EED9E1CA8DB7600A5B685 /* PinYinForObjc.m */; };
+		FE3EEDA81CA8DB7600A5B685 /* PinyinHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = FE3EEDA01CA8DB7600A5B685 /* PinyinHelper.m */; };
+		FE3EEDA91CA8DB7600A5B685 /* unicode_to_hanyu_pinyin.txt in Resources */ = {isa = PBXBuildFile; fileRef = FE3EEDA11CA8DB7600A5B685 /* unicode_to_hanyu_pinyin.txt */; };
+		FE3EEDAC1CA8FAB500A5B685 /* HanyuPinyinOutputFormat.m in Sources */ = {isa = PBXBuildFile; fileRef = FE3EEDAB1CA8FAB500A5B685 /* HanyuPinyinOutputFormat.m */; };
+		FE97C13A1CAB7B7F00AAD915 /* FamousDoctorTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = FE97C1381CAB7B7F00AAD915 /* FamousDoctorTableViewCell.m */; };
+		FE97C13B1CAB7B7F00AAD915 /* FamousDoctorTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FE97C1391CAB7B7F00AAD915 /* FamousDoctorTableViewCell.xib */; };
+		FE97C13E1CABB86100AAD915 /* DoctorInfoModel.m in Sources */ = {isa = PBXBuildFile; fileRef = FE97C13D1CABB86100AAD915 /* DoctorInfoModel.m */; };
+		FE97C1401CABBDD400AAD915 /* DoctorInfo.plist in Resources */ = {isa = PBXBuildFile; fileRef = FE97C13F1CABBDD400AAD915 /* DoctorInfo.plist */; };
+		FEF689B61CAEBD0C00595F93 /* DoctorFunctionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FEF689B51CAEBD0C00595F93 /* DoctorFunctionViewController.m */; };
+		FEF689BA1CB00CC000595F93 /* DoctorInfoTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = FEF689B81CB00CC000595F93 /* DoctorInfoTableViewCell.m */; };
+		FEF689BB1CB00CC000595F93 /* DoctorInfoTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FEF689B91CB00CC000595F93 /* DoctorInfoTableViewCell.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		FE0943611C856D6000D6ABC7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FE09433F1C856D6000D6ABC7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FE0943461C856D6000D6ABC7;
+			remoteInfo = "mh-doctorControl";
+		};
+		FE09436C1C856D6000D6ABC7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FE09433F1C856D6000D6ABC7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FE0943461C856D6000D6ABC7;
+			remoteInfo = "mh-doctorControl";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		5551EBE1C359DBF24B11AE58 /* Pods-mh-doctorControl.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-mh-doctorControl.release.xcconfig"; path = "Pods/Target Support Files/Pods-mh-doctorControl/Pods-mh-doctorControl.release.xcconfig"; sourceTree = "<group>"; };
+		9A02623EA073488176D07A08 /* Pods-mh-doctorControl.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-mh-doctorControl.debug.xcconfig"; path = "Pods/Target Support Files/Pods-mh-doctorControl/Pods-mh-doctorControl.debug.xcconfig"; sourceTree = "<group>"; };
+		9E3A543EE435231804220E47 /* libPods-mh-doctorControl.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-mh-doctorControl.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FE0943471C856D6000D6ABC7 /* mh-doctorControl.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "mh-doctorControl.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FE09434B1C856D6000D6ABC7 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		FE09435B1C856D6000D6ABC7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FE0943601C856D6000D6ABC7 /* mh-doctorControlTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "mh-doctorControlTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FE0943641C856D6000D6ABC7 /* mh_doctorControlTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = mh_doctorControlTests.m; sourceTree = "<group>"; };
+		FE0943661C856D6000D6ABC7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FE09436B1C856D6000D6ABC7 /* mh-doctorControlUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "mh-doctorControlUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FE09436F1C856D6000D6ABC7 /* mh_doctorControlUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = mh_doctorControlUITests.m; sourceTree = "<group>"; };
+		FE0943711C856D6000D6ABC7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FE09439B1C8580CB00D6ABC7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		FE0943A21C85D3DD00D6ABC7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FE0FA0021C9F9B290042FC3E /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		FE0FA0031C9F9B290042FC3E /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		FE0FA0061C9F9B290042FC3E /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
+		FE0FA0071C9F9B290042FC3E /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
+		FE0FA00A1C9F9B290042FC3E /* DoctorInfoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DoctorInfoViewController.h; sourceTree = "<group>"; };
+		FE0FA00B1C9F9B290042FC3E /* DoctorInfoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DoctorInfoViewController.m; sourceTree = "<group>"; };
+		FE0FA00C1C9F9B290042FC3E /* DoctorInfoViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DoctorInfoViewController.xib; sourceTree = "<group>"; };
+		FE0FA00D1C9F9B290042FC3E /* FocusViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FocusViewController.h; sourceTree = "<group>"; };
+		FE0FA00E1C9F9B290042FC3E /* FocusViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FocusViewController.m; sourceTree = "<group>"; };
+		FE0FA00F1C9F9B290042FC3E /* TeamViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TeamViewController.h; sourceTree = "<group>"; };
+		FE0FA0101C9F9B290042FC3E /* TeamViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TeamViewController.m; sourceTree = "<group>"; };
+		FE0FA0151C9F9B290042FC3E /* HomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeViewController.h; sourceTree = "<group>"; };
+		FE0FA0161C9F9B290042FC3E /* HomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeViewController.m; sourceTree = "<group>"; };
+		FE0FA0171C9F9B290042FC3E /* HomeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HomeViewController.xib; sourceTree = "<group>"; };
+		FE0FA01C1C9F9B290042FC3E /* IndividalSettingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IndividalSettingViewController.h; sourceTree = "<group>"; };
+		FE0FA01D1C9F9B290042FC3E /* IndividalSettingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IndividalSettingViewController.m; sourceTree = "<group>"; };
+		FE0FA01E1C9F9B290042FC3E /* IndividalSettingViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = IndividalSettingViewController.xib; sourceTree = "<group>"; };
+		FE27E89B1CA2D4F30036515B /* FamousDoctorSearchTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FamousDoctorSearchTableViewController.h; sourceTree = "<group>"; };
+		FE27E89C1CA2D4F30036515B /* FamousDoctorSearchTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FamousDoctorSearchTableViewController.m; sourceTree = "<group>"; };
+		FE27E89E1CA2DD850036515B /* MHSearchBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MHSearchBar.h; sourceTree = "<group>"; };
+		FE27E89F1CA2DD850036515B /* MHSearchBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MHSearchBar.m; sourceTree = "<group>"; };
+		FE3EED931CA8DB7600A5B685 /* ChineseInclude.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChineseInclude.h; sourceTree = "<group>"; };
+		FE3EED941CA8DB7600A5B685 /* ChineseInclude.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChineseInclude.m; sourceTree = "<group>"; };
+		FE3EED951CA8DB7600A5B685 /* ChineseToPinyinResource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChineseToPinyinResource.h; sourceTree = "<group>"; };
+		FE3EED961CA8DB7600A5B685 /* ChineseToPinyinResource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChineseToPinyinResource.m; sourceTree = "<group>"; };
+		FE3EED991CA8DB7600A5B685 /* NSString+PinYin4Cocoa.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+PinYin4Cocoa.h"; sourceTree = "<group>"; };
+		FE3EED9A1CA8DB7600A5B685 /* NSString+PinYin4Cocoa.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+PinYin4Cocoa.m"; sourceTree = "<group>"; };
+		FE3EED9B1CA8DB7600A5B685 /* PinyinFormatter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PinyinFormatter.h; sourceTree = "<group>"; };
+		FE3EED9C1CA8DB7600A5B685 /* PinyinFormatter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PinyinFormatter.m; sourceTree = "<group>"; };
+		FE3EED9D1CA8DB7600A5B685 /* PinYinForObjc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PinYinForObjc.h; sourceTree = "<group>"; };
+		FE3EED9E1CA8DB7600A5B685 /* PinYinForObjc.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PinYinForObjc.m; sourceTree = "<group>"; };
+		FE3EED9F1CA8DB7600A5B685 /* PinyinHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PinyinHelper.h; sourceTree = "<group>"; };
+		FE3EEDA01CA8DB7600A5B685 /* PinyinHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PinyinHelper.m; sourceTree = "<group>"; };
+		FE3EEDA11CA8DB7600A5B685 /* unicode_to_hanyu_pinyin.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = unicode_to_hanyu_pinyin.txt; sourceTree = "<group>"; };
+		FE3EEDAA1CA8FAB500A5B685 /* HanyuPinyinOutputFormat.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HanyuPinyinOutputFormat.h; sourceTree = "<group>"; };
+		FE3EEDAB1CA8FAB500A5B685 /* HanyuPinyinOutputFormat.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HanyuPinyinOutputFormat.m; sourceTree = "<group>"; };
+		FE97C1371CAB7B7F00AAD915 /* FamousDoctorTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FamousDoctorTableViewCell.h; sourceTree = "<group>"; };
+		FE97C1381CAB7B7F00AAD915 /* FamousDoctorTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FamousDoctorTableViewCell.m; sourceTree = "<group>"; };
+		FE97C1391CAB7B7F00AAD915 /* FamousDoctorTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FamousDoctorTableViewCell.xib; sourceTree = "<group>"; };
+		FE97C13C1CABB86100AAD915 /* DoctorInfoModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DoctorInfoModel.h; sourceTree = "<group>"; };
+		FE97C13D1CABB86100AAD915 /* DoctorInfoModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DoctorInfoModel.m; sourceTree = "<group>"; };
+		FE97C13F1CABBDD400AAD915 /* DoctorInfo.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = DoctorInfo.plist; sourceTree = "<group>"; };
+		FEF689B41CAEBD0C00595F93 /* DoctorFunctionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DoctorFunctionViewController.h; sourceTree = "<group>"; };
+		FEF689B51CAEBD0C00595F93 /* DoctorFunctionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DoctorFunctionViewController.m; sourceTree = "<group>"; };
+		FEF689B71CB00CC000595F93 /* DoctorInfoTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DoctorInfoTableViewCell.h; sourceTree = "<group>"; };
+		FEF689B81CB00CC000595F93 /* DoctorInfoTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DoctorInfoTableViewCell.m; sourceTree = "<group>"; };
+		FEF689B91CB00CC000595F93 /* DoctorInfoTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DoctorInfoTableViewCell.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FE0943441C856D6000D6ABC7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FCC0E1332A790B8FDD77E387 /* libPods-mh-doctorControl.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FE09435D1C856D6000D6ABC7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FE0943681C856D6000D6ABC7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		687BEDDB4D17D6CB43D86209 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9E3A543EE435231804220E47 /* libPods-mh-doctorControl.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D2DA48CC130954C2BA2DFBD2 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				9A02623EA073488176D07A08 /* Pods-mh-doctorControl.debug.xcconfig */,
+				5551EBE1C359DBF24B11AE58 /* Pods-mh-doctorControl.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		FE09433E1C856D6000D6ABC7 = {
+			isa = PBXGroup;
+			children = (
+				FE0943491C856D6000D6ABC7 /* mh-doctorControl */,
+				FE0943631C856D6000D6ABC7 /* mh-doctorControlTests */,
+				FE09436E1C856D6000D6ABC7 /* mh-doctorControlUITests */,
+				FE0943481C856D6000D6ABC7 /* Products */,
+				D2DA48CC130954C2BA2DFBD2 /* Pods */,
+				687BEDDB4D17D6CB43D86209 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		FE0943481C856D6000D6ABC7 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FE0943471C856D6000D6ABC7 /* mh-doctorControl.app */,
+				FE0943601C856D6000D6ABC7 /* mh-doctorControlTests.xctest */,
+				FE09436B1C856D6000D6ABC7 /* mh-doctorControlUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FE0943491C856D6000D6ABC7 /* mh-doctorControl */ = {
+			isa = PBXGroup;
+			children = (
+				FE0FA0001C9F9B290042FC3E /* class */,
+				FE3EED761CA8D04100A5B685 /* uitil */,
+				FE09439A1C8580CB00D6ABC7 /* LaunchScreen.storyboard */,
+				FE09435B1C856D6000D6ABC7 /* Info.plist */,
+				FE0943A21C85D3DD00D6ABC7 /* Assets.xcassets */,
+				FE09434A1C856D6000D6ABC7 /* Supporting Files */,
+				FE97C13F1CABBDD400AAD915 /* DoctorInfo.plist */,
+			);
+			path = "mh-doctorControl";
+			sourceTree = "<group>";
+		};
+		FE09434A1C856D6000D6ABC7 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				FE09434B1C856D6000D6ABC7 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		FE0943631C856D6000D6ABC7 /* mh-doctorControlTests */ = {
+			isa = PBXGroup;
+			children = (
+				FE0943641C856D6000D6ABC7 /* mh_doctorControlTests.m */,
+				FE0943661C856D6000D6ABC7 /* Info.plist */,
+			);
+			path = "mh-doctorControlTests";
+			sourceTree = "<group>";
+		};
+		FE09436E1C856D6000D6ABC7 /* mh-doctorControlUITests */ = {
+			isa = PBXGroup;
+			children = (
+				FE09436F1C856D6000D6ABC7 /* mh_doctorControlUITests.m */,
+				FE0943711C856D6000D6ABC7 /* Info.plist */,
+			);
+			path = "mh-doctorControlUITests";
+			sourceTree = "<group>";
+		};
+		FE0FA0001C9F9B290042FC3E /* class */ = {
+			isa = PBXGroup;
+			children = (
+				FE27E8971CA2D4AD0036515B /* MHFamousDoctorSearch */,
+				FE0FA0011C9F9B290042FC3E /* AppDelegate */,
+				FE0FA0041C9F9B290042FC3E /* Main */,
+				FE0FA0081C9F9B290042FC3E /* MHDOctorInfo */,
+				FE0FA0131C9F9B290042FC3E /* MHHomePage */,
+				FE0FA01A1C9F9B290042FC3E /* MHIndividalSetting */,
+			);
+			path = class;
+			sourceTree = "<group>";
+		};
+		FE0FA0011C9F9B290042FC3E /* AppDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				FE0FA0021C9F9B290042FC3E /* AppDelegate.h */,
+				FE0FA0031C9F9B290042FC3E /* AppDelegate.m */,
+			);
+			path = AppDelegate;
+			sourceTree = "<group>";
+		};
+		FE0FA0041C9F9B290042FC3E /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				FE0FA0051C9F9B290042FC3E /* Controller */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		FE0FA0051C9F9B290042FC3E /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				FE0FA0061C9F9B290042FC3E /* MainViewController.h */,
+				FE0FA0071C9F9B290042FC3E /* MainViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		FE0FA0081C9F9B290042FC3E /* MHDOctorInfo */ = {
+			isa = PBXGroup;
+			children = (
+				FE0FA0091C9F9B290042FC3E /* Controller */,
+				FE0FA0111C9F9B290042FC3E /* Model */,
+				FE0FA0121C9F9B290042FC3E /* View */,
+			);
+			path = MHDOctorInfo;
+			sourceTree = "<group>";
+		};
+		FE0FA0091C9F9B290042FC3E /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				FE0FA00A1C9F9B290042FC3E /* DoctorInfoViewController.h */,
+				FE0FA00B1C9F9B290042FC3E /* DoctorInfoViewController.m */,
+				FE0FA00C1C9F9B290042FC3E /* DoctorInfoViewController.xib */,
+				FE0FA00D1C9F9B290042FC3E /* FocusViewController.h */,
+				FE0FA00E1C9F9B290042FC3E /* FocusViewController.m */,
+				FE0FA00F1C9F9B290042FC3E /* TeamViewController.h */,
+				FE0FA0101C9F9B290042FC3E /* TeamViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		FE0FA0111C9F9B290042FC3E /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		FE0FA0121C9F9B290042FC3E /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		FE0FA0131C9F9B290042FC3E /* MHHomePage */ = {
+			isa = PBXGroup;
+			children = (
+				FE0FA0141C9F9B290042FC3E /* Controller */,
+				FE0FA0181C9F9B290042FC3E /* Model */,
+				FE0FA0191C9F9B290042FC3E /* View */,
+			);
+			path = MHHomePage;
+			sourceTree = "<group>";
+		};
+		FE0FA0141C9F9B290042FC3E /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				FE0FA0151C9F9B290042FC3E /* HomeViewController.h */,
+				FE0FA0161C9F9B290042FC3E /* HomeViewController.m */,
+				FE0FA0171C9F9B290042FC3E /* HomeViewController.xib */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		FE0FA0181C9F9B290042FC3E /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		FE0FA0191C9F9B290042FC3E /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		FE0FA01A1C9F9B290042FC3E /* MHIndividalSetting */ = {
+			isa = PBXGroup;
+			children = (
+				FE0FA01B1C9F9B290042FC3E /* Controller */,
+				FE0FA01F1C9F9B290042FC3E /* Model */,
+				FE0FA0201C9F9B290042FC3E /* View */,
+			);
+			path = MHIndividalSetting;
+			sourceTree = "<group>";
+		};
+		FE0FA01B1C9F9B290042FC3E /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				FE0FA01C1C9F9B290042FC3E /* IndividalSettingViewController.h */,
+				FE0FA01D1C9F9B290042FC3E /* IndividalSettingViewController.m */,
+				FE0FA01E1C9F9B290042FC3E /* IndividalSettingViewController.xib */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		FE0FA01F1C9F9B290042FC3E /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		FE0FA0201C9F9B290042FC3E /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		FE27E8971CA2D4AD0036515B /* MHFamousDoctorSearch */ = {
+			isa = PBXGroup;
+			children = (
+				FE27E8981CA2D4AD0036515B /* Controller */,
+				FE27E8991CA2D4AD0036515B /* Model */,
+				FE27E89A1CA2D4AD0036515B /* View */,
+			);
+			path = MHFamousDoctorSearch;
+			sourceTree = "<group>";
+		};
+		FE27E8981CA2D4AD0036515B /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				FE27E89B1CA2D4F30036515B /* FamousDoctorSearchTableViewController.h */,
+				FE27E89C1CA2D4F30036515B /* FamousDoctorSearchTableViewController.m */,
+				FEF689B41CAEBD0C00595F93 /* DoctorFunctionViewController.h */,
+				FEF689B51CAEBD0C00595F93 /* DoctorFunctionViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		FE27E8991CA2D4AD0036515B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				FE97C13C1CABB86100AAD915 /* DoctorInfoModel.h */,
+				FE97C13D1CABB86100AAD915 /* DoctorInfoModel.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		FE27E89A1CA2D4AD0036515B /* View */ = {
+			isa = PBXGroup;
+			children = (
+				FE27E89E1CA2DD850036515B /* MHSearchBar.h */,
+				FE27E89F1CA2DD850036515B /* MHSearchBar.m */,
+				FE97C1371CAB7B7F00AAD915 /* FamousDoctorTableViewCell.h */,
+				FE97C1381CAB7B7F00AAD915 /* FamousDoctorTableViewCell.m */,
+				FE97C1391CAB7B7F00AAD915 /* FamousDoctorTableViewCell.xib */,
+				FEF689B71CB00CC000595F93 /* DoctorInfoTableViewCell.h */,
+				FEF689B81CB00CC000595F93 /* DoctorInfoTableViewCell.m */,
+				FEF689B91CB00CC000595F93 /* DoctorInfoTableViewCell.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		FE3EED761CA8D04100A5B685 /* uitil */ = {
+			isa = PBXGroup;
+			children = (
+				FE3EED921CA8DB7600A5B685 /* pinyin */,
+			);
+			path = uitil;
+			sourceTree = "<group>";
+		};
+		FE3EED921CA8DB7600A5B685 /* pinyin */ = {
+			isa = PBXGroup;
+			children = (
+				FE3EED931CA8DB7600A5B685 /* ChineseInclude.h */,
+				FE3EED941CA8DB7600A5B685 /* ChineseInclude.m */,
+				FE3EED951CA8DB7600A5B685 /* ChineseToPinyinResource.h */,
+				FE3EED961CA8DB7600A5B685 /* ChineseToPinyinResource.m */,
+				FE3EEDAA1CA8FAB500A5B685 /* HanyuPinyinOutputFormat.h */,
+				FE3EEDAB1CA8FAB500A5B685 /* HanyuPinyinOutputFormat.m */,
+				FE3EED991CA8DB7600A5B685 /* NSString+PinYin4Cocoa.h */,
+				FE3EED9A1CA8DB7600A5B685 /* NSString+PinYin4Cocoa.m */,
+				FE3EED9B1CA8DB7600A5B685 /* PinyinFormatter.h */,
+				FE3EED9C1CA8DB7600A5B685 /* PinyinFormatter.m */,
+				FE3EED9D1CA8DB7600A5B685 /* PinYinForObjc.h */,
+				FE3EED9E1CA8DB7600A5B685 /* PinYinForObjc.m */,
+				FE3EED9F1CA8DB7600A5B685 /* PinyinHelper.h */,
+				FE3EEDA01CA8DB7600A5B685 /* PinyinHelper.m */,
+				FE3EEDA11CA8DB7600A5B685 /* unicode_to_hanyu_pinyin.txt */,
+			);
+			path = pinyin;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FE0943461C856D6000D6ABC7 /* mh-doctorControl */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FE0943741C856D6000D6ABC7 /* Build configuration list for PBXNativeTarget "mh-doctorControl" */;
+			buildPhases = (
+				A08346B8581322D2DEBE60ED /* Check Pods Manifest.lock */,
+				FE0943431C856D6000D6ABC7 /* Sources */,
+				FE0943441C856D6000D6ABC7 /* Frameworks */,
+				FE0943451C856D6000D6ABC7 /* Resources */,
+				BEA2E90927F51D2411BA064B /* Embed Pods Frameworks */,
+				DAF53F5D575879CAB451A9E3 /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "mh-doctorControl";
+			productName = "mh-doctorControl";
+			productReference = FE0943471C856D6000D6ABC7 /* mh-doctorControl.app */;
+			productType = "com.apple.product-type.application";
+		};
+		FE09435F1C856D6000D6ABC7 /* mh-doctorControlTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FE0943771C856D6000D6ABC7 /* Build configuration list for PBXNativeTarget "mh-doctorControlTests" */;
+			buildPhases = (
+				FE09435C1C856D6000D6ABC7 /* Sources */,
+				FE09435D1C856D6000D6ABC7 /* Frameworks */,
+				FE09435E1C856D6000D6ABC7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FE0943621C856D6000D6ABC7 /* PBXTargetDependency */,
+			);
+			name = "mh-doctorControlTests";
+			productName = "mh-doctorControlTests";
+			productReference = FE0943601C856D6000D6ABC7 /* mh-doctorControlTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		FE09436A1C856D6000D6ABC7 /* mh-doctorControlUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FE09437A1C856D6000D6ABC7 /* Build configuration list for PBXNativeTarget "mh-doctorControlUITests" */;
+			buildPhases = (
+				FE0943671C856D6000D6ABC7 /* Sources */,
+				FE0943681C856D6000D6ABC7 /* Frameworks */,
+				FE0943691C856D6000D6ABC7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FE09436D1C856D6000D6ABC7 /* PBXTargetDependency */,
+			);
+			name = "mh-doctorControlUITests";
+			productName = "mh-doctorControlUITests";
+			productReference = FE09436B1C856D6000D6ABC7 /* mh-doctorControlUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FE09433F1C856D6000D6ABC7 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = minghanzhao;
+				TargetAttributes = {
+					FE0943461C856D6000D6ABC7 = {
+						CreatedOnToolsVersion = 7.2.1;
+					};
+					FE09435F1C856D6000D6ABC7 = {
+						CreatedOnToolsVersion = 7.2.1;
+						TestTargetID = FE0943461C856D6000D6ABC7;
+					};
+					FE09436A1C856D6000D6ABC7 = {
+						CreatedOnToolsVersion = 7.2.1;
+						TestTargetID = FE0943461C856D6000D6ABC7;
+					};
+				};
+			};
+			buildConfigurationList = FE0943421C856D6000D6ABC7 /* Build configuration list for PBXProject "mh-doctorControl" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FE09433E1C856D6000D6ABC7;
+			productRefGroup = FE0943481C856D6000D6ABC7 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FE0943461C856D6000D6ABC7 /* mh-doctorControl */,
+				FE09435F1C856D6000D6ABC7 /* mh-doctorControlTests */,
+				FE09436A1C856D6000D6ABC7 /* mh-doctorControlUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FE0943451C856D6000D6ABC7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FE3EEDA91CA8DB7600A5B685 /* unicode_to_hanyu_pinyin.txt in Resources */,
+				FE97C1401CABBDD400AAD915 /* DoctorInfo.plist in Resources */,
+				FE97C13B1CAB7B7F00AAD915 /* FamousDoctorTableViewCell.xib in Resources */,
+				FE09439E1C8580CB00D6ABC7 /* LaunchScreen.storyboard in Resources */,
+				FE0FA0241C9F9B290042FC3E /* DoctorInfoViewController.xib in Resources */,
+				FE0943A31C85D3DD00D6ABC7 /* Assets.xcassets in Resources */,
+				FE0FA0281C9F9B290042FC3E /* HomeViewController.xib in Resources */,
+				FE0FA02A1C9F9B290042FC3E /* IndividalSettingViewController.xib in Resources */,
+				FEF689BB1CB00CC000595F93 /* DoctorInfoTableViewCell.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FE09435E1C856D6000D6ABC7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FE0943691C856D6000D6ABC7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		A08346B8581322D2DEBE60ED /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		BEA2E90927F51D2411BA064B /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-mh-doctorControl/Pods-mh-doctorControl-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DAF53F5D575879CAB451A9E3 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-mh-doctorControl/Pods-mh-doctorControl-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FE0943431C856D6000D6ABC7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FEF689BA1CB00CC000595F93 /* DoctorInfoTableViewCell.m in Sources */,
+				FE0FA0291C9F9B290042FC3E /* IndividalSettingViewController.m in Sources */,
+				FE0FA0211C9F9B290042FC3E /* AppDelegate.m in Sources */,
+				FE27E8A01CA2DD850036515B /* MHSearchBar.m in Sources */,
+				FEF689B61CAEBD0C00595F93 /* DoctorFunctionViewController.m in Sources */,
+				FE3EEDA21CA8DB7600A5B685 /* ChineseInclude.m in Sources */,
+				FE0FA0261C9F9B290042FC3E /* TeamViewController.m in Sources */,
+				FE3EEDA71CA8DB7600A5B685 /* PinYinForObjc.m in Sources */,
+				FE3EEDA31CA8DB7600A5B685 /* ChineseToPinyinResource.m in Sources */,
+				FE97C13A1CAB7B7F00AAD915 /* FamousDoctorTableViewCell.m in Sources */,
+				FE0FA0221C9F9B290042FC3E /* MainViewController.m in Sources */,
+				FE09434C1C856D6000D6ABC7 /* main.m in Sources */,
+				FE0FA0231C9F9B290042FC3E /* DoctorInfoViewController.m in Sources */,
+				FE3EEDAC1CA8FAB500A5B685 /* HanyuPinyinOutputFormat.m in Sources */,
+				FE3EEDA81CA8DB7600A5B685 /* PinyinHelper.m in Sources */,
+				FE97C13E1CABB86100AAD915 /* DoctorInfoModel.m in Sources */,
+				FE3EEDA61CA8DB7600A5B685 /* PinyinFormatter.m in Sources */,
+				FE27E89D1CA2D4F40036515B /* FamousDoctorSearchTableViewController.m in Sources */,
+				FE3EEDA51CA8DB7600A5B685 /* NSString+PinYin4Cocoa.m in Sources */,
+				FE0FA0271C9F9B290042FC3E /* HomeViewController.m in Sources */,
+				FE0FA0251C9F9B290042FC3E /* FocusViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FE09435C1C856D6000D6ABC7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FE0943651C856D6000D6ABC7 /* mh_doctorControlTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FE0943671C856D6000D6ABC7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FE0943701C856D6000D6ABC7 /* mh_doctorControlUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		FE0943621C856D6000D6ABC7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FE0943461C856D6000D6ABC7 /* mh-doctorControl */;
+			targetProxy = FE0943611C856D6000D6ABC7 /* PBXContainerItemProxy */;
+		};
+		FE09436D1C856D6000D6ABC7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FE0943461C856D6000D6ABC7 /* mh-doctorControl */;
+			targetProxy = FE09436C1C856D6000D6ABC7 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		FE09439A1C8580CB00D6ABC7 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FE09439B1C8580CB00D6ABC7 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		FE0943721C856D6000D6ABC7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		FE0943731C856D6000D6ABC7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FE0943751C856D6000D6ABC7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9A02623EA073488176D07A08 /* Pods-mh-doctorControl.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "mh-doctorControl/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.zmh.mh-doctorControl";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		FE0943761C856D6000D6ABC7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5551EBE1C359DBF24B11AE58 /* Pods-mh-doctorControl.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "mh-doctorControl/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.zmh.mh-doctorControl";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		FE0943781C856D6000D6ABC7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "mh-doctorControlTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.zmh.mh-doctorControlTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/mh-doctorControl.app/mh-doctorControl";
+			};
+			name = Debug;
+		};
+		FE0943791C856D6000D6ABC7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "mh-doctorControlTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.zmh.mh-doctorControlTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/mh-doctorControl.app/mh-doctorControl";
+			};
+			name = Release;
+		};
+		FE09437B1C856D6000D6ABC7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "mh-doctorControlUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.zmh.mh-doctorControlUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "mh-doctorControl";
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		FE09437C1C856D6000D6ABC7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "mh-doctorControlUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.zmh.mh-doctorControlUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "mh-doctorControl";
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FE0943421C856D6000D6ABC7 /* Build configuration list for PBXProject "mh-doctorControl" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FE0943721C856D6000D6ABC7 /* Debug */,
+				FE0943731C856D6000D6ABC7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FE0943741C856D6000D6ABC7 /* Build configuration list for PBXNativeTarget "mh-doctorControl" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FE0943751C856D6000D6ABC7 /* Debug */,
+				FE0943761C856D6000D6ABC7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FE0943771C856D6000D6ABC7 /* Build configuration list for PBXNativeTarget "mh-doctorControlTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FE0943781C856D6000D6ABC7 /* Debug */,
+				FE0943791C856D6000D6ABC7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FE09437A1C856D6000D6ABC7 /* Build configuration list for PBXNativeTarget "mh-doctorControlUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FE09437B1C856D6000D6ABC7 /* Debug */,
+				FE09437C1C856D6000D6ABC7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FE09433F1C856D6000D6ABC7 /* Project object */;
+}
