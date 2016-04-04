@@ -17,6 +17,7 @@ static NSString *openServiceID = @"openServiceID";
 - (void)viewDidLoad {
     [super viewDidLoad];
     [self.tableView registerClass:[UITableViewCell class] forCellReuseIdentifier:openServiceID];
+    self.tableView.scrollEnabled = NO;
 }
 
 

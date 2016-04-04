@@ -33,6 +33,22 @@
 		FE3EEDA81CA8DB7600A5B685 /* PinyinHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = FE3EEDA01CA8DB7600A5B685 /* PinyinHelper.m */; };
 		FE3EEDA91CA8DB7600A5B685 /* unicode_to_hanyu_pinyin.txt in Resources */ = {isa = PBXBuildFile; fileRef = FE3EEDA11CA8DB7600A5B685 /* unicode_to_hanyu_pinyin.txt */; };
 		FE3EEDAC1CA8FAB500A5B685 /* HanyuPinyinOutputFormat.m in Sources */ = {isa = PBXBuildFile; fileRef = FE3EEDAB1CA8FAB500A5B685 /* HanyuPinyinOutputFormat.m */; };
+		FE6262F31CB2B0C000C02B47 /* NSObject+addressBook.m in Sources */ = {isa = PBXBuildFile; fileRef = FE6262D41CB2B0C000C02B47 /* NSObject+addressBook.m */; };
+		FE6262F41CB2B0C000C02B47 /* NSObject+TextSize.m in Sources */ = {isa = PBXBuildFile; fileRef = FE6262D61CB2B0C000C02B47 /* NSObject+TextSize.m */; };
+		FE6262F51CB2B0C000C02B47 /* UIColor+HEX.m in Sources */ = {isa = PBXBuildFile; fileRef = FE6262D81CB2B0C000C02B47 /* UIColor+HEX.m */; };
+		FE6262F61CB2B0C000C02B47 /* UIImage+Image.m in Sources */ = {isa = PBXBuildFile; fileRef = FE6262DA1CB2B0C000C02B47 /* UIImage+Image.m */; };
+		FE6262F71CB2B0C000C02B47 /* UIView+Frame.m in Sources */ = {isa = PBXBuildFile; fileRef = FE6262DC1CB2B0C000C02B47 /* UIView+Frame.m */; };
+		FE6262F81CB2B0C000C02B47 /* HLHospitalContactViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FE6262DF1CB2B0C000C02B47 /* HLHospitalContactViewController.m */; };
+		FE6262F91CB2B0C000C02B47 /* HLProfileViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FE6262E11CB2B0C000C02B47 /* HLProfileViewController.m */; };
+		FE6262FA1CB2B0C000C02B47 /* HLContactDoctors.plist in Resources */ = {isa = PBXBuildFile; fileRef = FE6262E21CB2B0C000C02B47 /* HLContactDoctors.plist */; };
+		FE6262FB1CB2B0C000C02B47 /* HLContactDoctor.m in Sources */ = {isa = PBXBuildFile; fileRef = FE6262E51CB2B0C000C02B47 /* HLContactDoctor.m */; };
+		FE6262FC1CB2B0C000C02B47 /* HLContactDoctorGroup.m in Sources */ = {isa = PBXBuildFile; fileRef = FE6262E71CB2B0C000C02B47 /* HLContactDoctorGroup.m */; };
+		FE6262FD1CB2B0C000C02B47 /* HLContactDoctorContactsHeadView.m in Sources */ = {isa = PBXBuildFile; fileRef = FE6262EA1CB2B0C000C02B47 /* HLContactDoctorContactsHeadView.m */; };
+		FE6262FE1CB2B0C000C02B47 /* HLContactProileHeadView.m in Sources */ = {isa = PBXBuildFile; fileRef = FE6262EC1CB2B0C000C02B47 /* HLContactProileHeadView.m */; };
+		FE6262FF1CB2B0C000C02B47 /* HLContactsProileBaseCell.m in Sources */ = {isa = PBXBuildFile; fileRef = FE6262EE1CB2B0C000C02B47 /* HLContactsProileBaseCell.m */; };
+		FE6263001CB2B0C000C02B47 /* HLContactsProileSecitonCell.m in Sources */ = {isa = PBXBuildFile; fileRef = FE6262F01CB2B0C000C02B47 /* HLContactsProileSecitonCell.m */; };
+		FE6263011CB2B0C000C02B47 /* HLContactsTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = FE6262F21CB2B0C000C02B47 /* HLContactsTableViewCell.m */; };
+		FE6263091CB2B42A00C02B47 /* MBProgressHUD+Add.m in Sources */ = {isa = PBXBuildFile; fileRef = FE6263081CB2B42A00C02B47 /* MBProgressHUD+Add.m */; };
 		FE97C13A1CAB7B7F00AAD915 /* FamousDoctorTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = FE97C1381CAB7B7F00AAD915 /* FamousDoctorTableViewCell.m */; };
 		FE97C13B1CAB7B7F00AAD915 /* FamousDoctorTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FE97C1391CAB7B7F00AAD915 /* FamousDoctorTableViewCell.xib */; };
 		FE97C13E1CABB86100AAD915 /* DoctorInfoModel.m in Sources */ = {isa = PBXBuildFile; fileRef = FE97C13D1CABB86100AAD915 /* DoctorInfoModel.m */; };
@@ -41,6 +57,9 @@
 		FEF689BA1CB00CC000595F93 /* DoctorInfoTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = FEF689B81CB00CC000595F93 /* DoctorInfoTableViewCell.m */; };
 		FEF689BB1CB00CC000595F93 /* DoctorInfoTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FEF689B91CB00CC000595F93 /* DoctorInfoTableViewCell.xib */; };
 		FEF689BE1CB0289D00595F93 /* OpenServiceTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FEF689BD1CB0289D00595F93 /* OpenServiceTableViewController.m */; };
+		FEF689C11CB1534E00595F93 /* ConsultRecordTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FEF689C01CB1534E00595F93 /* ConsultRecordTableViewController.m */; };
+		FEF689C41CB153E900595F93 /* PatientCommentTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FEF689C31CB153E900595F93 /* PatientCommentTableViewController.m */; };
+		FEF689C71CB15D6F00595F93 /* InfoChooseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FEF689C61CB15D6F00595F93 /* InfoChooseViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -111,6 +130,37 @@
 		FE3EEDA11CA8DB7600A5B685 /* unicode_to_hanyu_pinyin.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = unicode_to_hanyu_pinyin.txt; sourceTree = "<group>"; };
 		FE3EEDAA1CA8FAB500A5B685 /* HanyuPinyinOutputFormat.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HanyuPinyinOutputFormat.h; sourceTree = "<group>"; };
 		FE3EEDAB1CA8FAB500A5B685 /* HanyuPinyinOutputFormat.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HanyuPinyinOutputFormat.m; sourceTree = "<group>"; };
+		FE6262D31CB2B0C000C02B47 /* NSObject+addressBook.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+addressBook.h"; sourceTree = "<group>"; };
+		FE6262D41CB2B0C000C02B47 /* NSObject+addressBook.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+addressBook.m"; sourceTree = "<group>"; };
+		FE6262D51CB2B0C000C02B47 /* NSObject+TextSize.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+TextSize.h"; sourceTree = "<group>"; };
+		FE6262D61CB2B0C000C02B47 /* NSObject+TextSize.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+TextSize.m"; sourceTree = "<group>"; };
+		FE6262D71CB2B0C000C02B47 /* UIColor+HEX.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+HEX.h"; sourceTree = "<group>"; };
+		FE6262D81CB2B0C000C02B47 /* UIColor+HEX.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+HEX.m"; sourceTree = "<group>"; };
+		FE6262D91CB2B0C000C02B47 /* UIImage+Image.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Image.h"; sourceTree = "<group>"; };
+		FE6262DA1CB2B0C000C02B47 /* UIImage+Image.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Image.m"; sourceTree = "<group>"; };
+		FE6262DB1CB2B0C000C02B47 /* UIView+Frame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Frame.h"; sourceTree = "<group>"; };
+		FE6262DC1CB2B0C000C02B47 /* UIView+Frame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Frame.m"; sourceTree = "<group>"; };
+		FE6262DE1CB2B0C000C02B47 /* HLHospitalContactViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HLHospitalContactViewController.h; sourceTree = "<group>"; };
+		FE6262DF1CB2B0C000C02B47 /* HLHospitalContactViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HLHospitalContactViewController.m; sourceTree = "<group>"; };
+		FE6262E01CB2B0C000C02B47 /* HLProfileViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HLProfileViewController.h; sourceTree = "<group>"; };
+		FE6262E11CB2B0C000C02B47 /* HLProfileViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HLProfileViewController.m; sourceTree = "<group>"; };
+		FE6262E21CB2B0C000C02B47 /* HLContactDoctors.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = HLContactDoctors.plist; sourceTree = "<group>"; };
+		FE6262E41CB2B0C000C02B47 /* HLContactDoctor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HLContactDoctor.h; sourceTree = "<group>"; };
+		FE6262E51CB2B0C000C02B47 /* HLContactDoctor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HLContactDoctor.m; sourceTree = "<group>"; };
+		FE6262E61CB2B0C000C02B47 /* HLContactDoctorGroup.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HLContactDoctorGroup.h; sourceTree = "<group>"; };
+		FE6262E71CB2B0C000C02B47 /* HLContactDoctorGroup.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HLContactDoctorGroup.m; sourceTree = "<group>"; };
+		FE6262E91CB2B0C000C02B47 /* HLContactDoctorContactsHeadView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HLContactDoctorContactsHeadView.h; sourceTree = "<group>"; };
+		FE6262EA1CB2B0C000C02B47 /* HLContactDoctorContactsHeadView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HLContactDoctorContactsHeadView.m; sourceTree = "<group>"; };
+		FE6262EB1CB2B0C000C02B47 /* HLContactProileHeadView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HLContactProileHeadView.h; sourceTree = "<group>"; };
+		FE6262EC1CB2B0C000C02B47 /* HLContactProileHeadView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HLContactProileHeadView.m; sourceTree = "<group>"; };
+		FE6262ED1CB2B0C000C02B47 /* HLContactsProileBaseCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HLContactsProileBaseCell.h; sourceTree = "<group>"; };
+		FE6262EE1CB2B0C000C02B47 /* HLContactsProileBaseCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HLContactsProileBaseCell.m; sourceTree = "<group>"; };
+		FE6262EF1CB2B0C000C02B47 /* HLContactsProileSecitonCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HLContactsProileSecitonCell.h; sourceTree = "<group>"; };
+		FE6262F01CB2B0C000C02B47 /* HLContactsProileSecitonCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HLContactsProileSecitonCell.m; sourceTree = "<group>"; };
+		FE6262F11CB2B0C000C02B47 /* HLContactsTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HLContactsTableViewCell.h; sourceTree = "<group>"; };
+		FE6262F21CB2B0C000C02B47 /* HLContactsTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HLContactsTableViewCell.m; sourceTree = "<group>"; };
+		FE6263071CB2B42A00C02B47 /* MBProgressHUD+Add.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MBProgressHUD+Add.h"; sourceTree = "<group>"; };
+		FE6263081CB2B42A00C02B47 /* MBProgressHUD+Add.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "MBProgressHUD+Add.m"; sourceTree = "<group>"; };
 		FE97C1371CAB7B7F00AAD915 /* FamousDoctorTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FamousDoctorTableViewCell.h; sourceTree = "<group>"; };
 		FE97C1381CAB7B7F00AAD915 /* FamousDoctorTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FamousDoctorTableViewCell.m; sourceTree = "<group>"; };
 		FE97C1391CAB7B7F00AAD915 /* FamousDoctorTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FamousDoctorTableViewCell.xib; sourceTree = "<group>"; };
@@ -124,6 +174,12 @@
 		FEF689B91CB00CC000595F93 /* DoctorInfoTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DoctorInfoTableViewCell.xib; sourceTree = "<group>"; };
 		FEF689BC1CB0289D00595F93 /* OpenServiceTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OpenServiceTableViewController.h; sourceTree = "<group>"; };
 		FEF689BD1CB0289D00595F93 /* OpenServiceTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OpenServiceTableViewController.m; sourceTree = "<group>"; };
+		FEF689BF1CB1534E00595F93 /* ConsultRecordTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ConsultRecordTableViewController.h; sourceTree = "<group>"; };
+		FEF689C01CB1534E00595F93 /* ConsultRecordTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ConsultRecordTableViewController.m; sourceTree = "<group>"; };
+		FEF689C21CB153E900595F93 /* PatientCommentTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PatientCommentTableViewController.h; sourceTree = "<group>"; };
+		FEF689C31CB153E900595F93 /* PatientCommentTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PatientCommentTableViewController.m; sourceTree = "<group>"; };
+		FEF689C51CB15D6F00595F93 /* InfoChooseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InfoChooseViewController.h; sourceTree = "<group>"; };
+		FEF689C61CB15D6F00595F93 /* InfoChooseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InfoChooseViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -194,6 +250,7 @@
 		FE0943491C856D6000D6ABC7 /* mh-doctorControl */ = {
 			isa = PBXGroup;
 			children = (
+				FE6263061CB2B41000C02B47 /* 3dpart */,
 				FE0FA0001C9F9B290042FC3E /* class */,
 				FE3EED761CA8D04100A5B685 /* uitil */,
 				FE09439A1C8580CB00D6ABC7 /* LaunchScreen.storyboard */,
@@ -234,6 +291,7 @@
 		FE0FA0001C9F9B290042FC3E /* class */ = {
 			isa = PBXGroup;
 			children = (
+				FE6262D11CB2B0C000C02B47 /* HospitalContacts */,
 				FE27E8971CA2D4AD0036515B /* MHFamousDoctorSearch */,
 				FE0FA0011C9F9B290042FC3E /* AppDelegate */,
 				FE0FA0041C9F9B290042FC3E /* Main */,
@@ -395,6 +453,12 @@
 				FEF689B51CAEBD0C00595F93 /* DoctorFunctionViewController.m */,
 				FEF689BC1CB0289D00595F93 /* OpenServiceTableViewController.h */,
 				FEF689BD1CB0289D00595F93 /* OpenServiceTableViewController.m */,
+				FEF689BF1CB1534E00595F93 /* ConsultRecordTableViewController.h */,
+				FEF689C01CB1534E00595F93 /* ConsultRecordTableViewController.m */,
+				FEF689C21CB153E900595F93 /* PatientCommentTableViewController.h */,
+				FEF689C31CB153E900595F93 /* PatientCommentTableViewController.m */,
+				FEF689C51CB15D6F00595F93 /* InfoChooseViewController.h */,
+				FEF689C61CB15D6F00595F93 /* InfoChooseViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -451,6 +515,83 @@
 				FE3EEDA11CA8DB7600A5B685 /* unicode_to_hanyu_pinyin.txt */,
 			);
 			path = pinyin;
+			sourceTree = "<group>";
+		};
+		FE6262D11CB2B0C000C02B47 /* HospitalContacts */ = {
+			isa = PBXGroup;
+			children = (
+				FE6262D21CB2B0C000C02B47 /* Category */,
+				FE6262DD1CB2B0C000C02B47 /* Controller */,
+				FE6262E21CB2B0C000C02B47 /* HLContactDoctors.plist */,
+				FE6262E31CB2B0C000C02B47 /* model */,
+				FE6262E81CB2B0C000C02B47 /* view */,
+			);
+			path = HospitalContacts;
+			sourceTree = "<group>";
+		};
+		FE6262D21CB2B0C000C02B47 /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				FE6262D31CB2B0C000C02B47 /* NSObject+addressBook.h */,
+				FE6262D41CB2B0C000C02B47 /* NSObject+addressBook.m */,
+				FE6262D51CB2B0C000C02B47 /* NSObject+TextSize.h */,
+				FE6262D61CB2B0C000C02B47 /* NSObject+TextSize.m */,
+				FE6262D71CB2B0C000C02B47 /* UIColor+HEX.h */,
+				FE6262D81CB2B0C000C02B47 /* UIColor+HEX.m */,
+				FE6262D91CB2B0C000C02B47 /* UIImage+Image.h */,
+				FE6262DA1CB2B0C000C02B47 /* UIImage+Image.m */,
+				FE6262DB1CB2B0C000C02B47 /* UIView+Frame.h */,
+				FE6262DC1CB2B0C000C02B47 /* UIView+Frame.m */,
+			);
+			path = Category;
+			sourceTree = "<group>";
+		};
+		FE6262DD1CB2B0C000C02B47 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				FE6262DE1CB2B0C000C02B47 /* HLHospitalContactViewController.h */,
+				FE6262DF1CB2B0C000C02B47 /* HLHospitalContactViewController.m */,
+				FE6262E01CB2B0C000C02B47 /* HLProfileViewController.h */,
+				FE6262E11CB2B0C000C02B47 /* HLProfileViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		FE6262E31CB2B0C000C02B47 /* model */ = {
+			isa = PBXGroup;
+			children = (
+				FE6262E41CB2B0C000C02B47 /* HLContactDoctor.h */,
+				FE6262E51CB2B0C000C02B47 /* HLContactDoctor.m */,
+				FE6262E61CB2B0C000C02B47 /* HLContactDoctorGroup.h */,
+				FE6262E71CB2B0C000C02B47 /* HLContactDoctorGroup.m */,
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
+		FE6262E81CB2B0C000C02B47 /* view */ = {
+			isa = PBXGroup;
+			children = (
+				FE6262E91CB2B0C000C02B47 /* HLContactDoctorContactsHeadView.h */,
+				FE6262EA1CB2B0C000C02B47 /* HLContactDoctorContactsHeadView.m */,
+				FE6262EB1CB2B0C000C02B47 /* HLContactProileHeadView.h */,
+				FE6262EC1CB2B0C000C02B47 /* HLContactProileHeadView.m */,
+				FE6262ED1CB2B0C000C02B47 /* HLContactsProileBaseCell.h */,
+				FE6262EE1CB2B0C000C02B47 /* HLContactsProileBaseCell.m */,
+				FE6262EF1CB2B0C000C02B47 /* HLContactsProileSecitonCell.h */,
+				FE6262F01CB2B0C000C02B47 /* HLContactsProileSecitonCell.m */,
+				FE6262F11CB2B0C000C02B47 /* HLContactsTableViewCell.h */,
+				FE6262F21CB2B0C000C02B47 /* HLContactsTableViewCell.m */,
+			);
+			path = view;
+			sourceTree = "<group>";
+		};
+		FE6263061CB2B41000C02B47 /* 3dpart */ = {
+			isa = PBXGroup;
+			children = (
+				FE6263071CB2B42A00C02B47 /* MBProgressHUD+Add.h */,
+				FE6263081CB2B42A00C02B47 /* MBProgressHUD+Add.m */,
+			);
+			path = 3dpart;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -559,6 +700,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FE6262FA1CB2B0C000C02B47 /* HLContactDoctors.plist in Resources */,
 				FE3EEDA91CA8DB7600A5B685 /* unicode_to_hanyu_pinyin.txt in Resources */,
 				FE97C1401CABBDD400AAD915 /* DoctorInfo.plist in Resources */,
 				FE97C13B1CAB7B7F00AAD915 /* FamousDoctorTableViewCell.xib in Resources */,
@@ -644,23 +786,41 @@
 				FE0FA0291C9F9B290042FC3E /* IndividalSettingViewController.m in Sources */,
 				FE0FA0211C9F9B290042FC3E /* AppDelegate.m in Sources */,
 				FE27E8A01CA2DD850036515B /* MHSearchBar.m in Sources */,
+				FE6262F41CB2B0C000C02B47 /* NSObject+TextSize.m in Sources */,
+				FE6263001CB2B0C000C02B47 /* HLContactsProileSecitonCell.m in Sources */,
 				FEF689B61CAEBD0C00595F93 /* DoctorFunctionViewController.m in Sources */,
+				FE6263091CB2B42A00C02B47 /* MBProgressHUD+Add.m in Sources */,
 				FE3EEDA21CA8DB7600A5B685 /* ChineseInclude.m in Sources */,
 				FE0FA0261C9F9B290042FC3E /* TeamViewController.m in Sources */,
+				FE6262FE1CB2B0C000C02B47 /* HLContactProileHeadView.m in Sources */,
+				FE6262FB1CB2B0C000C02B47 /* HLContactDoctor.m in Sources */,
 				FE3EEDA71CA8DB7600A5B685 /* PinYinForObjc.m in Sources */,
 				FEF689BE1CB0289D00595F93 /* OpenServiceTableViewController.m in Sources */,
 				FE3EEDA31CA8DB7600A5B685 /* ChineseToPinyinResource.m in Sources */,
 				FE97C13A1CAB7B7F00AAD915 /* FamousDoctorTableViewCell.m in Sources */,
+				FE6263011CB2B0C000C02B47 /* HLContactsTableViewCell.m in Sources */,
 				FE0FA0221C9F9B290042FC3E /* MainViewController.m in Sources */,
 				FE09434C1C856D6000D6ABC7 /* main.m in Sources */,
+				FEF689C41CB153E900595F93 /* PatientCommentTableViewController.m in Sources */,
 				FE0FA0231C9F9B290042FC3E /* DoctorInfoViewController.m in Sources */,
 				FE3EEDAC1CA8FAB500A5B685 /* HanyuPinyinOutputFormat.m in Sources */,
+				FE6262FD1CB2B0C000C02B47 /* HLContactDoctorContactsHeadView.m in Sources */,
+				FE6262F51CB2B0C000C02B47 /* UIColor+HEX.m in Sources */,
+				FE6262F71CB2B0C000C02B47 /* UIView+Frame.m in Sources */,
 				FE3EEDA81CA8DB7600A5B685 /* PinyinHelper.m in Sources */,
+				FE6262FF1CB2B0C000C02B47 /* HLContactsProileBaseCell.m in Sources */,
+				FE6262F81CB2B0C000C02B47 /* HLHospitalContactViewController.m in Sources */,
+				FEF689C11CB1534E00595F93 /* ConsultRecordTableViewController.m in Sources */,
 				FE97C13E1CABB86100AAD915 /* DoctorInfoModel.m in Sources */,
+				FE6262F31CB2B0C000C02B47 /* NSObject+addressBook.m in Sources */,
+				FE6262F91CB2B0C000C02B47 /* HLProfileViewController.m in Sources */,
 				FE3EEDA61CA8DB7600A5B685 /* PinyinFormatter.m in Sources */,
+				FE6262FC1CB2B0C000C02B47 /* HLContactDoctorGroup.m in Sources */,
 				FE27E89D1CA2D4F40036515B /* FamousDoctorSearchTableViewController.m in Sources */,
 				FE3EEDA51CA8DB7600A5B685 /* NSString+PinYin4Cocoa.m in Sources */,
 				FE0FA0271C9F9B290042FC3E /* HomeViewController.m in Sources */,
+				FE6262F61CB2B0C000C02B47 /* UIImage+Image.m in Sources */,
+				FEF689C71CB15D6F00595F93 /* InfoChooseViewController.m in Sources */,
 				FE0FA0251C9F9B290042FC3E /* FocusViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

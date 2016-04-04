@@ -10,6 +10,7 @@
 #import "HomeViewController.h"
 #import "SDCycleScrollView.h"
 #import "FamousDoctorSearchTableViewController.h"
+#import "HLHospitalContactViewController.h"
 @interface HomeViewController ()<UICollectionViewDelegate,UICollectionViewDataSource,UITableViewDelegate,UITableViewDataSource>
 //@property (nonatomic ,strong) UIImageView *imaeView; /*imageView*/
 @property (nonatomic ,strong) UIScrollView *scrollView; /*scrollView*/
@@ -81,7 +82,11 @@
         vc.hidesBottomBarWhenPushed = YES;
         [self.navigationController pushViewController:vc animated:YES];
     }
-    
+    else if (indexPath.row == 1){
+        HLHospitalContactViewController *vc = [[HLHospitalContactViewController alloc] init];
+        vc.hidesBottomBarWhenPushed = YES;
+        [self.navigationController pushViewController:vc animated:YES];
+    }
 }
 
 #pragma mark - UITableViewDelegate
