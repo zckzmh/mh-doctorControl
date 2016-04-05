@@ -35,7 +35,6 @@ static NSString *famousDoctCellID = @"famousDoctCellID";
 -(void)viewWillAppear:(BOOL)animated{
     [super viewWillAppear:animated];
     self.hidesBottomBarWhenPushed = YES;
-    
 }
 
 -(void)viewWillDisappear:(BOOL)animated{
@@ -50,7 +49,10 @@ static NSString *famousDoctCellID = @"famousDoctCellID";
 #pragma mark - UITextFieldDelegate
 - (void)textFieldDidBeginEditing:(UITextField *)textField
 {
-    
+//    UIButton *button = [[UIButton alloc] init];
+//    [button setTitle:@"取消" forState:UIControlStateNormal];
+//    [button addTarget:self action:@selector(cancel) forControlEvents:UIControlEventTouchUpInside];
+//    UIBarButtonItem *rightButtonItem = [[UIBarButtonItem alloc] initWithCustomView:button];
     self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"取消" style:UIBarButtonItemStylePlain target:self action:@selector(cancle)];
     
 }

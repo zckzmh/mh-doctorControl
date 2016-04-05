@@ -11,6 +11,7 @@
 #import "SDCycleScrollView.h"
 #import "FamousDoctorSearchTableViewController.h"
 #import "HLHospitalContactViewController.h"
+#import "HLPDFCatagoryController.h"
 @interface HomeViewController ()<UICollectionViewDelegate,UICollectionViewDataSource,UITableViewDelegate,UITableViewDataSource>
 //@property (nonatomic ,strong) UIImageView *imaeView; /*imageView*/
 @property (nonatomic ,strong) UIScrollView *scrollView; /*scrollView*/
@@ -85,6 +86,10 @@
     else if (indexPath.row == 1){
         HLHospitalContactViewController *vc = [[HLHospitalContactViewController alloc] init];
         vc.hidesBottomBarWhenPushed = YES;
+        [self.navigationController pushViewController:vc animated:YES];
+    }
+    else if (indexPath.row == 2){
+        HLPDFCatagoryController *vc = [[HLPDFCatagoryController alloc] initWithStyle:UITableViewStylePlain];
         [self.navigationController pushViewController:vc animated:YES];
     }
 }

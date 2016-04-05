@@ -39,13 +39,19 @@ static NSString *doctorIntroduceID = @"doctorIntroduceID";
 -(void)viewWillAppear:(BOOL)animated{
     [super viewWillAppear:animated];
     self.navigationController.navigationBar.barTintColor = [UIColor colorWithRed:0 green:199/255.0 blue:255/255.0 alpha:1.0];
-    self.navigationController.navigationBar.tintColor = [UIColor whiteColor];
+    UIBarButtonItem *backBtnItem = [[UIBarButtonItem alloc] initWithImage:[UIImage imageNamed:@"navigationbar_back_white"] style:UIBarButtonItemStylePlain target:self action:@selector(backPage)];
+    [backBtnItem setTintColor:[UIColor whiteColor]];
+    self.navigationItem.leftBarButtonItem = backBtnItem;
 
 }
 -(void)viewWillDisappear:(BOOL)animated{
     [super viewWillDisappear:animated];
-    self.navigationController.navigationBar.barTintColor = [UIColor whiteColor];
+     self.navigationController.navigationBar.barTintColor = [UIColor whiteColor];
 }
+-(void)backPage{
+    [self.navigationController popViewControllerAnimated:YES];
+}
+#pragma mark-UITableViewDelegate
 
 -(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
     return 2;
