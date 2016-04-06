@@ -113,8 +113,8 @@
 
     AFHTTPSessionManager *manager = [AFHTTPSessionManager manager];
     NSURLRequest *request = [NSURLRequest requestWithURL:[NSURL URLWithString:url]];
-
-    NSProgress *progress = nil;
+    NSProgress* progress = nil;
+    
     self.downloadProgress = progress;
     // 4. 创建下载任务
     NSURLSessionDownloadTask *task = [manager downloadTaskWithRequest:request progress:^(NSProgress *progress){} destination:^NSURL *(NSURL *targetPath, NSURLResponse *response) {

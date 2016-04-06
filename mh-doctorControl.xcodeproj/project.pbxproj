@@ -85,6 +85,24 @@
 		FE97C13B1CAB7B7F00AAD915 /* FamousDoctorTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FE97C1391CAB7B7F00AAD915 /* FamousDoctorTableViewCell.xib */; };
 		FE97C13E1CABB86100AAD915 /* DoctorInfoModel.m in Sources */ = {isa = PBXBuildFile; fileRef = FE97C13D1CABB86100AAD915 /* DoctorInfoModel.m */; };
 		FE97C1401CABBDD400AAD915 /* DoctorInfo.plist in Resources */ = {isa = PBXBuildFile; fileRef = FE97C13F1CABBDD400AAD915 /* DoctorInfo.plist */; };
+		FED231071CB552BB00531E30 /* QRCameraSwitchButton.m in Sources */ = {isa = PBXBuildFile; fileRef = FED230EF1CB552BB00531E30 /* QRCameraSwitchButton.m */; };
+		FED231081CB552BB00531E30 /* QRCodeReader.m in Sources */ = {isa = PBXBuildFile; fileRef = FED230F11CB552BB00531E30 /* QRCodeReader.m */; };
+		FED231091CB552BB00531E30 /* QRCodeReaderAanimationLineView.m in Sources */ = {isa = PBXBuildFile; fileRef = FED230F51CB552BB00531E30 /* QRCodeReaderAanimationLineView.m */; };
+		FED2310A1CB552BB00531E30 /* QRCodeReaderMaskView.m in Sources */ = {isa = PBXBuildFile; fileRef = FED230F71CB552BB00531E30 /* QRCodeReaderMaskView.m */; };
+		FED2310B1CB552BB00531E30 /* QRCodeReaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = FED230F91CB552BB00531E30 /* QRCodeReaderView.m */; };
+		FED2310C1CB552BB00531E30 /* QRCodeReaderViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FED230FB1CB552BB00531E30 /* QRCodeReaderViewController.m */; };
+		FED2310D1CB552BB00531E30 /* QRCodeBottomLeft@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FED230FD1CB552BB00531E30 /* QRCodeBottomLeft@2x.png */; };
+		FED2310E1CB552BB00531E30 /* QRCodeBottomLeft@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = FED230FE1CB552BB00531E30 /* QRCodeBottomLeft@3x.png */; };
+		FED2310F1CB552BB00531E30 /* QRCodeBottomRight@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FED230FF1CB552BB00531E30 /* QRCodeBottomRight@2x.png */; };
+		FED231101CB552BB00531E30 /* QRCodeBottomRight@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = FED231001CB552BB00531E30 /* QRCodeBottomRight@3x.png */; };
+		FED231111CB552BB00531E30 /* QRCodeLine@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FED231011CB552BB00531E30 /* QRCodeLine@2x.png */; };
+		FED231121CB552BB00531E30 /* QRCodeLine@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = FED231021CB552BB00531E30 /* QRCodeLine@3x.png */; };
+		FED231131CB552BB00531E30 /* QRCodeTopLeft@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FED231031CB552BB00531E30 /* QRCodeTopLeft@2x.png */; };
+		FED231141CB552BB00531E30 /* QRCodeTopLeft@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = FED231041CB552BB00531E30 /* QRCodeTopLeft@3x.png */; };
+		FED231151CB552BB00531E30 /* QRCodeTopRight@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FED231051CB552BB00531E30 /* QRCodeTopRight@2x.png */; };
+		FED231161CB552BB00531E30 /* QRCodeTopRight@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = FED231061CB552BB00531E30 /* QRCodeTopRight@3x.png */; };
+		FED231191CB565ED00531E30 /* WebViewInfoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FED231181CB565ED00531E30 /* WebViewInfoViewController.m */; };
+		FED2311B1CB5678500531E30 /* web in Resources */ = {isa = PBXBuildFile; fileRef = FED2311A1CB5678500531E30 /* web */; };
 		FEF689B61CAEBD0C00595F93 /* DoctorFunctionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FEF689B51CAEBD0C00595F93 /* DoctorFunctionViewController.m */; };
 		FEF689BA1CB00CC000595F93 /* DoctorInfoTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = FEF689B81CB00CC000595F93 /* DoctorInfoTableViewCell.m */; };
 		FEF689BB1CB00CC000595F93 /* DoctorInfoTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FEF689B91CB00CC000595F93 /* DoctorInfoTableViewCell.xib */; };
@@ -261,6 +279,32 @@
 		FE97C13C1CABB86100AAD915 /* DoctorInfoModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DoctorInfoModel.h; sourceTree = "<group>"; };
 		FE97C13D1CABB86100AAD915 /* DoctorInfoModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DoctorInfoModel.m; sourceTree = "<group>"; };
 		FE97C13F1CABBDD400AAD915 /* DoctorInfo.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = DoctorInfo.plist; sourceTree = "<group>"; };
+		FED230EE1CB552BB00531E30 /* QRCameraSwitchButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QRCameraSwitchButton.h; sourceTree = "<group>"; };
+		FED230EF1CB552BB00531E30 /* QRCameraSwitchButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QRCameraSwitchButton.m; sourceTree = "<group>"; };
+		FED230F01CB552BB00531E30 /* QRCodeReader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QRCodeReader.h; sourceTree = "<group>"; };
+		FED230F11CB552BB00531E30 /* QRCodeReader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QRCodeReader.m; sourceTree = "<group>"; };
+		FED230F21CB552BB00531E30 /* QRCodeReaderDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QRCodeReaderDelegate.h; sourceTree = "<group>"; };
+		FED230F41CB552BB00531E30 /* QRCodeReaderAanimationLineView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QRCodeReaderAanimationLineView.h; sourceTree = "<group>"; };
+		FED230F51CB552BB00531E30 /* QRCodeReaderAanimationLineView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QRCodeReaderAanimationLineView.m; sourceTree = "<group>"; };
+		FED230F61CB552BB00531E30 /* QRCodeReaderMaskView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QRCodeReaderMaskView.h; sourceTree = "<group>"; };
+		FED230F71CB552BB00531E30 /* QRCodeReaderMaskView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QRCodeReaderMaskView.m; sourceTree = "<group>"; };
+		FED230F81CB552BB00531E30 /* QRCodeReaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QRCodeReaderView.h; sourceTree = "<group>"; };
+		FED230F91CB552BB00531E30 /* QRCodeReaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QRCodeReaderView.m; sourceTree = "<group>"; };
+		FED230FA1CB552BB00531E30 /* QRCodeReaderViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QRCodeReaderViewController.h; sourceTree = "<group>"; };
+		FED230FB1CB552BB00531E30 /* QRCodeReaderViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QRCodeReaderViewController.m; sourceTree = "<group>"; };
+		FED230FD1CB552BB00531E30 /* QRCodeBottomLeft@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "QRCodeBottomLeft@2x.png"; sourceTree = "<group>"; };
+		FED230FE1CB552BB00531E30 /* QRCodeBottomLeft@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "QRCodeBottomLeft@3x.png"; sourceTree = "<group>"; };
+		FED230FF1CB552BB00531E30 /* QRCodeBottomRight@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "QRCodeBottomRight@2x.png"; sourceTree = "<group>"; };
+		FED231001CB552BB00531E30 /* QRCodeBottomRight@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "QRCodeBottomRight@3x.png"; sourceTree = "<group>"; };
+		FED231011CB552BB00531E30 /* QRCodeLine@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "QRCodeLine@2x.png"; sourceTree = "<group>"; };
+		FED231021CB552BB00531E30 /* QRCodeLine@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "QRCodeLine@3x.png"; sourceTree = "<group>"; };
+		FED231031CB552BB00531E30 /* QRCodeTopLeft@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "QRCodeTopLeft@2x.png"; sourceTree = "<group>"; };
+		FED231041CB552BB00531E30 /* QRCodeTopLeft@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "QRCodeTopLeft@3x.png"; sourceTree = "<group>"; };
+		FED231051CB552BB00531E30 /* QRCodeTopRight@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "QRCodeTopRight@2x.png"; sourceTree = "<group>"; };
+		FED231061CB552BB00531E30 /* QRCodeTopRight@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "QRCodeTopRight@3x.png"; sourceTree = "<group>"; };
+		FED231171CB565ED00531E30 /* WebViewInfoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WebViewInfoViewController.h; sourceTree = "<group>"; };
+		FED231181CB565ED00531E30 /* WebViewInfoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WebViewInfoViewController.m; sourceTree = "<group>"; };
+		FED2311A1CB5678500531E30 /* web */ = {isa = PBXFileReference; lastKnownFileType = folder; path = web; sourceTree = "<group>"; };
 		FEF689B41CAEBD0C00595F93 /* DoctorFunctionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DoctorFunctionViewController.h; sourceTree = "<group>"; };
 		FEF689B51CAEBD0C00595F93 /* DoctorFunctionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DoctorFunctionViewController.m; sourceTree = "<group>"; };
 		FEF689B71CB00CC000595F93 /* DoctorInfoTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DoctorInfoTableViewCell.h; sourceTree = "<group>"; };
@@ -322,6 +366,7 @@
 		FE09433E1C856D6000D6ABC7 = {
 			isa = PBXGroup;
 			children = (
+				FED2311A1CB5678500531E30 /* web */,
 				FE0943491C856D6000D6ABC7 /* mh-doctorControl */,
 				FE0943631C856D6000D6ABC7 /* mh-doctorControlTests */,
 				FE09436E1C856D6000D6ABC7 /* mh-doctorControlUITests */,
@@ -477,6 +522,8 @@
 				FE0FA0151C9F9B290042FC3E /* HomeViewController.h */,
 				FE0FA0161C9F9B290042FC3E /* HomeViewController.m */,
 				FE0FA0171C9F9B290042FC3E /* HomeViewController.xib */,
+				FED231171CB565ED00531E30 /* WebViewInfoViewController.h */,
+				FED231181CB565ED00531E30 /* WebViewInfoViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -686,6 +733,7 @@
 		FE6263061CB2B41000C02B47 /* 3dpart */ = {
 			isa = PBXGroup;
 			children = (
+				FED230ED1CB552BB00531E30 /* QRCodeReaderViewController */,
 				FE6263071CB2B42A00C02B47 /* MBProgressHUD+Add.h */,
 				FE6263081CB2B42A00C02B47 /* MBProgressHUD+Add.m */,
 			);
@@ -798,6 +846,52 @@
 			path = View;
 			sourceTree = "<group>";
 		};
+		FED230ED1CB552BB00531E30 /* QRCodeReaderViewController */ = {
+			isa = PBXGroup;
+			children = (
+				FED230EE1CB552BB00531E30 /* QRCameraSwitchButton.h */,
+				FED230EF1CB552BB00531E30 /* QRCameraSwitchButton.m */,
+				FED230F01CB552BB00531E30 /* QRCodeReader.h */,
+				FED230F11CB552BB00531E30 /* QRCodeReader.m */,
+				FED230F21CB552BB00531E30 /* QRCodeReaderDelegate.h */,
+				FED230F31CB552BB00531E30 /* QRCodeReaderView */,
+				FED230FA1CB552BB00531E30 /* QRCodeReaderViewController.h */,
+				FED230FB1CB552BB00531E30 /* QRCodeReaderViewController.m */,
+				FED230FC1CB552BB00531E30 /* Resources */,
+			);
+			path = QRCodeReaderViewController;
+			sourceTree = "<group>";
+		};
+		FED230F31CB552BB00531E30 /* QRCodeReaderView */ = {
+			isa = PBXGroup;
+			children = (
+				FED230F41CB552BB00531E30 /* QRCodeReaderAanimationLineView.h */,
+				FED230F51CB552BB00531E30 /* QRCodeReaderAanimationLineView.m */,
+				FED230F61CB552BB00531E30 /* QRCodeReaderMaskView.h */,
+				FED230F71CB552BB00531E30 /* QRCodeReaderMaskView.m */,
+				FED230F81CB552BB00531E30 /* QRCodeReaderView.h */,
+				FED230F91CB552BB00531E30 /* QRCodeReaderView.m */,
+			);
+			path = QRCodeReaderView;
+			sourceTree = "<group>";
+		};
+		FED230FC1CB552BB00531E30 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				FED230FD1CB552BB00531E30 /* QRCodeBottomLeft@2x.png */,
+				FED230FE1CB552BB00531E30 /* QRCodeBottomLeft@3x.png */,
+				FED230FF1CB552BB00531E30 /* QRCodeBottomRight@2x.png */,
+				FED231001CB552BB00531E30 /* QRCodeBottomRight@3x.png */,
+				FED231011CB552BB00531E30 /* QRCodeLine@2x.png */,
+				FED231021CB552BB00531E30 /* QRCodeLine@3x.png */,
+				FED231031CB552BB00531E30 /* QRCodeTopLeft@2x.png */,
+				FED231041CB552BB00531E30 /* QRCodeTopLeft@3x.png */,
+				FED231051CB552BB00531E30 /* QRCodeTopRight@2x.png */,
+				FED231061CB552BB00531E30 /* QRCodeTopRight@3x.png */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -905,16 +999,27 @@
 			buildActionMask = 2147483647;
 			files = (
 				FE6262FA1CB2B0C000C02B47 /* HLContactDoctors.plist in Resources */,
+				FED2310F1CB552BB00531E30 /* QRCodeBottomRight@2x.png in Resources */,
+				FED2310E1CB552BB00531E30 /* QRCodeBottomLeft@3x.png in Resources */,
 				FE8214A71CB4170200846DED /* HLPDFCatagory.plist in Resources */,
 				FE8214601CB3FC2C00846DED /* ConsultRecorTableViewCell.xib in Resources */,
+				FED231131CB552BB00531E30 /* QRCodeTopLeft@2x.png in Resources */,
 				FE3EEDA91CA8DB7600A5B685 /* unicode_to_hanyu_pinyin.txt in Resources */,
 				FE97C1401CABBDD400AAD915 /* DoctorInfo.plist in Resources */,
+				FED231121CB552BB00531E30 /* QRCodeLine@3x.png in Resources */,
+				FED231101CB552BB00531E30 /* QRCodeBottomRight@3x.png in Resources */,
 				FE97C13B1CAB7B7F00AAD915 /* FamousDoctorTableViewCell.xib in Resources */,
 				FE09439E1C8580CB00D6ABC7 /* LaunchScreen.storyboard in Resources */,
 				FE0FA0241C9F9B290042FC3E /* DoctorInfoViewController.xib in Resources */,
 				FE0943A31C85D3DD00D6ABC7 /* Assets.xcassets in Resources */,
+				FED2311B1CB5678500531E30 /* web in Resources */,
+				FED231141CB552BB00531E30 /* QRCodeTopLeft@3x.png in Resources */,
+				FED231151CB552BB00531E30 /* QRCodeTopRight@2x.png in Resources */,
+				FED231161CB552BB00531E30 /* QRCodeTopRight@3x.png in Resources */,
+				FED231111CB552BB00531E30 /* QRCodeLine@2x.png in Resources */,
 				FE0FA0281C9F9B290042FC3E /* HomeViewController.xib in Resources */,
 				FE0FA02A1C9F9B290042FC3E /* IndividalSettingViewController.xib in Resources */,
+				FED2310D1CB552BB00531E30 /* QRCodeBottomLeft@2x.png in Resources */,
 				FEF689BB1CB00CC000595F93 /* DoctorInfoTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1015,9 +1120,11 @@
 				FE6262FB1CB2B0C000C02B47 /* HLContactDoctor.m in Sources */,
 				FE3EEDA71CA8DB7600A5B685 /* PinYinForObjc.m in Sources */,
 				FEF689BE1CB0289D00595F93 /* OpenServiceTableViewController.m in Sources */,
+				FED2310C1CB552BB00531E30 /* QRCodeReaderViewController.m in Sources */,
 				FE3EEDA31CA8DB7600A5B685 /* ChineseToPinyinResource.m in Sources */,
 				FE97C13A1CAB7B7F00AAD915 /* FamousDoctorTableViewCell.m in Sources */,
 				FE6263011CB2B0C000C02B47 /* HLContactsTableViewCell.m in Sources */,
+				FED231091CB552BB00531E30 /* QRCodeReaderAanimationLineView.m in Sources */,
 				FE0FA0221C9F9B290042FC3E /* MainViewController.m in Sources */,
 				FE8214AB1CB4170200846DED /* CGPDFDocument.m in Sources */,
 				FE8214A81CB4170200846DED /* HLPDFManager.m in Sources */,
@@ -1034,11 +1141,14 @@
 				FE6262F51CB2B0C000C02B47 /* UIColor+HEX.m in Sources */,
 				FE8214A21CB4170200846DED /* NSObject+TextSize.m in Sources */,
 				FE6262F71CB2B0C000C02B47 /* UIView+Frame.m in Sources */,
+				FED231191CB565ED00531E30 /* WebViewInfoViewController.m in Sources */,
 				FE8214AE1CB4170200846DED /* ReaderContentTile.m in Sources */,
 				FE3EEDA81CA8DB7600A5B685 /* PinyinHelper.m in Sources */,
 				FE6262FF1CB2B0C000C02B47 /* HLContactsProileBaseCell.m in Sources */,
 				FE8214B31CB4170200846DED /* ReaderMainToolbar.m in Sources */,
+				FED231081CB552BB00531E30 /* QRCodeReader.m in Sources */,
 				FE6262F81CB2B0C000C02B47 /* HLHospitalContactViewController.m in Sources */,
+				FED231071CB552BB00531E30 /* QRCameraSwitchButton.m in Sources */,
 				FEF689C11CB1534E00595F93 /* ConsultRecordTableViewController.m in Sources */,
 				FE8214A61CB4170200846DED /* HLSummaryController.m in Sources */,
 				FE8214A41CB4170200846DED /* UIView+Frame.m in Sources */,
@@ -1056,6 +1166,8 @@
 				FE0FA0271C9F9B290042FC3E /* HomeViewController.m in Sources */,
 				FE8214B61CB4170200846DED /* ReaderThumbQueue.m in Sources */,
 				FE6262F61CB2B0C000C02B47 /* UIImage+Image.m in Sources */,
+				FED2310A1CB552BB00531E30 /* QRCodeReaderMaskView.m in Sources */,
+				FED2310B1CB552BB00531E30 /* QRCodeReaderView.m in Sources */,
 				FEF689C71CB15D6F00595F93 /* InfoChooseViewController.m in Sources */,
 				FE0FA0251C9F9B290042FC3E /* FocusViewController.m in Sources */,
 			);

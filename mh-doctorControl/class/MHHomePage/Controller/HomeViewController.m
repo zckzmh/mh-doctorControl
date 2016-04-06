@@ -12,6 +12,8 @@
 #import "FamousDoctorSearchTableViewController.h"
 #import "HLHospitalContactViewController.h"
 #import "HLPDFCatagoryController.h"
+#import "QRCodeReaderViewController.h"
+#import "WebViewInfoViewController.h"
 @interface HomeViewController ()<UICollectionViewDelegate,UICollectionViewDataSource,UITableViewDelegate,UITableViewDataSource>
 //@property (nonatomic ,strong) UIImageView *imaeView; /*imageView*/
 @property (nonatomic ,strong) UIScrollView *scrollView; /*scrollView*/
@@ -92,8 +94,61 @@
         HLPDFCatagoryController *vc = [[HLPDFCatagoryController alloc] initWithStyle:UITableViewStylePlain];
         [self.navigationController pushViewController:vc animated:YES];
     }
+    else if (indexPath.row == 3){
+        [self showQRcode];
+    }
 }
 
+-(void)showQRcode{
+    AVAuthorizationStatus authStatus = [AVCaptureDevice authorizationStatusForMediaType:AVMediaTypeVideo];
+    
+    //    然后判断用户的权限
+    
+    
+    
+    if (authStatus == AVAuthorizationStatusDenied)
+    {
+        
+        
+        UIAlertController *vc = [UIAlertController alertControllerWithTitle:@"温馨提示" message:@"母子健康手册无法获取系统相机权限。需要您授权后才能使用扫一扫功能。是否要跳转设置？" preferredStyle:UIAlertControllerStyleAlert];
+        
+        UIAlertAction *actionOK = [UIAlertAction actionWithTitle:@"授权" style:UIAlertActionStyleDestructive handler:^(UIAlertAction * _Nonnull action) {
+            
+            NSURL * url = [NSURL URLWithString:UIApplicationOpenSettingsURLString];
+            
+            if([[UIApplication sharedApplication] canOpenURL:url]) {
+                
+                NSURL*url =[NSURL URLWithString:UIApplicationOpenSettingsURLString];           [[UIApplication sharedApplication] openURL:url];
+                
+            }
+        }];
+        
+        UIAlertAction *actionCancel = [UIAlertAction actionWithTitle:@"取消" style:UIAlertActionStyleCancel handler:^(UIAlertAction * _Nonnull action) {
+            
+        }];
+        
+        [vc addAction:actionOK];
+        [vc addAction:actionCancel];
+        
+        [self presentViewController:vc animated:YES completion:^{
+            
+        }];
+        
+        
+        return;
+    }
+    
+    
+    NSArray *types = @[AVMetadataObjectTypeQRCode];
+    QRCodeReaderViewController *reader        = [QRCodeReaderViewController readerWithMetadataObjectTypes:types];
+    [reader setCompletionWithBlock:^(NSString *resultAsString) {
+        [self dismissViewControllerAnimated:YES completion:^{
+            NSLog(@"扫描结束");
+        }];
+    }];
+    
+    [self presentViewController:reader animated:YES completion:NULL];
+}
 #pragma mark - UITableViewDelegate
 -(NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
 {
@@ -150,7 +205,17 @@
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
-    
+    switch (indexPath.row) {
+        case 0:
+        {
+            WebViewInfoViewController *vc = [[WebViewInfoViewController alloc] init];
+            vc.hidesBottomBarWhenPushed= YES;
+            [self.navigationController pushViewController:vc animated:YES];
+            break;
+        }
+        default:
+            break;
+    }
 }
 
 
