@@ -20,7 +20,7 @@
     [self.view addSubview:self.webView];
     
     NSString *resourcePath = [[NSBundle mainBundle] resourcePath];
-    NSString *filePath = [resourcePath stringByAppendingPathComponent:@"web/pageOne.html"];
+    NSString *filePath = [resourcePath stringByAppendingPathComponent:[NSString stringWithFormat:@"webpart/%@",self.webName]];
     NSURL* url = [NSURL fileURLWithPath:filePath];
     NSURLRequest* request = [NSURLRequest requestWithURL:url] ;
     [self.webView loadRequest:request];

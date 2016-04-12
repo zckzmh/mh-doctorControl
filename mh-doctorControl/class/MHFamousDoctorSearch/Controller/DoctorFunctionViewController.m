@@ -38,7 +38,11 @@ static NSString *doctorIntroduceID = @"doctorIntroduceID";
 }
 -(void)viewWillAppear:(BOOL)animated{
     [super viewWillAppear:animated];
-    self.navigationController.navigationBar.barTintColor = [UIColor colorWithRed:0 green:199/255.0 blue:255/255.0 alpha:1.0];
+    self.automaticallyAdjustsScrollViewInsets = NO;
+//    self.navigationController.navigationBar.barTintColor = [UIColor colorWithRed:0 green:199/255.0 blue:255/255.0 alpha:1.0];
+    [self.navigationController.navigationBar setBackgroundImage:[[UIImage alloc] init] forBarMetrics:UIBarMetricsDefault];
+    [self.navigationController.navigationBar setShadowImage:[[UIImage alloc] init]];
+
     UIBarButtonItem *backBtnItem = [[UIBarButtonItem alloc] initWithImage:[UIImage imageNamed:@"navigationbar_back_white"] style:UIBarButtonItemStylePlain target:self action:@selector(backPage)];
     [backBtnItem setTintColor:[UIColor whiteColor]];
     self.navigationItem.leftBarButtonItem = backBtnItem;
@@ -61,7 +65,7 @@ static NSString *doctorIntroduceID = @"doctorIntroduceID";
 }
 -(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
     if (indexPath.row == 0) {
-        return 90;
+        return 154;
     }
     return 44;
 }

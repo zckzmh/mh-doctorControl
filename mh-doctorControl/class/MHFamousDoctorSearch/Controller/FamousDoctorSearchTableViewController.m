@@ -34,13 +34,10 @@ static NSString *famousDoctCellID = @"famousDoctCellID";
 
 -(void)viewWillAppear:(BOOL)animated{
     [super viewWillAppear:animated];
-    self.hidesBottomBarWhenPushed = YES;
 }
 
 -(void)viewWillDisappear:(BOOL)animated{
     [super viewWillDisappear:animated];
-    
-    self.hidesBottomBarWhenPushed = NO;
     
 }
 -(void)backPage{

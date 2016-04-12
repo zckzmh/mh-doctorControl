@@ -92,6 +92,7 @@
     }
     else if (indexPath.row == 2){
         HLPDFCatagoryController *vc = [[HLPDFCatagoryController alloc] initWithStyle:UITableViewStylePlain];
+         vc.hidesBottomBarWhenPushed = YES;
         [self.navigationController pushViewController:vc animated:YES];
     }
     else if (indexPath.row == 3){
@@ -209,6 +210,39 @@
         case 0:
         {
             WebViewInfoViewController *vc = [[WebViewInfoViewController alloc] init];
+            vc.webName = @"pageOne.html";
+            vc.hidesBottomBarWhenPushed= YES;
+            [self.navigationController pushViewController:vc animated:YES];
+            break;
+        }
+        case 1:
+        {
+            WebViewInfoViewController *vc = [[WebViewInfoViewController alloc] init];
+            vc.webName = @"pageTwo.html";
+            vc.hidesBottomBarWhenPushed= YES;
+            [self.navigationController pushViewController:vc animated:YES];
+            break;
+        }
+        case 2:
+        {
+            WebViewInfoViewController *vc = [[WebViewInfoViewController alloc] init];
+            vc.webName = @"pageThree.html";
+            vc.hidesBottomBarWhenPushed= YES;
+            [self.navigationController pushViewController:vc animated:YES];
+            break;
+        }
+        case 3:
+        {
+            WebViewInfoViewController *vc = [[WebViewInfoViewController alloc] init];
+            vc.webName = @"pageFour.html";
+            vc.hidesBottomBarWhenPushed= YES;
+            [self.navigationController pushViewController:vc animated:YES];
+            break;
+        }
+        case 4:
+        {
+            WebViewInfoViewController *vc = [[WebViewInfoViewController alloc] init];
+            vc.webName = @"pageFive.html";
             vc.hidesBottomBarWhenPushed= YES;
             [self.navigationController pushViewController:vc animated:YES];
             break;

@@ -21,28 +21,32 @@
                                 <rect key="frame" x="100" y="0.0" width="276" height="151"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="罗岩" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cNG-Zn-RS8">
-                                        <rect key="frame" x="8" y="10" width="30" height="18"/>
+                                        <rect key="frame" x="8" y="74" width="30" height="18"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="副主任医师" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wnb-jZ-cht">
-                                        <rect key="frame" x="45" y="12" width="60" height="14"/>
+                                        <rect key="frame" x="45" y="76" width="60" height="14"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="iconfont-renzheng" translatesAutoresizingMaskIntoConstraints="NO" id="WIs-0M-oNh">
-                                        <rect key="frame" x="236" y="10" width="20" height="20"/>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="iconfont-renzheng" translatesAutoresizingMaskIntoConstraints="NO" id="WIs-0M-oNh">
+                                        <rect key="frame" x="236" y="74" width="20" height="20"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="20" id="9fT-YF-Pq9"/>
+                                            <constraint firstAttribute="width" constant="20" id="Cus-fm-Mgb"/>
+                                        </constraints>
                                     </imageView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="北京协和医院" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lAV-Zb-kVi">
-                                        <rect key="frame" x="8" y="62" width="72" height="15"/>
+                                        <rect key="frame" x="8" y="126" width="72" height="15"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="眼科" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OTB-Eq-82H">
-                                        <rect key="frame" x="8" y="38" width="24" height="14"/>
+                                        <rect key="frame" x="8" y="102" width="24" height="14"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
@@ -50,12 +54,14 @@
                                 </subviews>
                                 <color key="backgroundColor" red="0.0" green="0.78006784539999996" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="WIs-0M-oNh" secondAttribute="trailing" constant="20" id="0pS-iG-wMK"/>
                                     <constraint firstItem="cNG-Zn-RS8" firstAttribute="leading" secondItem="Ohf-3V-jk4" secondAttribute="leading" constant="8" id="EJQ-h5-drp"/>
                                     <constraint firstItem="lAV-Zb-kVi" firstAttribute="leading" secondItem="OTB-Eq-82H" secondAttribute="leading" id="Ew9-fv-gdp"/>
                                     <constraint firstItem="Wnb-jZ-cht" firstAttribute="leading" secondItem="cNG-Zn-RS8" secondAttribute="trailing" constant="7" id="F8n-3d-Ze5"/>
                                     <constraint firstItem="Wnb-jZ-cht" firstAttribute="centerY" secondItem="cNG-Zn-RS8" secondAttribute="centerY" id="G68-Kb-IbW"/>
                                     <constraint firstItem="OTB-Eq-82H" firstAttribute="leading" secondItem="cNG-Zn-RS8" secondAttribute="leading" id="Xh3-wL-MQi"/>
-                                    <constraint firstItem="cNG-Zn-RS8" firstAttribute="top" secondItem="Ohf-3V-jk4" secondAttribute="top" constant="10" id="vuW-tx-djq"/>
+                                    <constraint firstItem="WIs-0M-oNh" firstAttribute="top" secondItem="Ohf-3V-jk4" secondAttribute="top" constant="74" id="bxw-2B-2Jy"/>
+                                    <constraint firstItem="cNG-Zn-RS8" firstAttribute="top" secondItem="Ohf-3V-jk4" secondAttribute="top" constant="74" id="vuW-tx-djq"/>
                                     <constraint firstItem="OTB-Eq-82H" firstAttribute="top" secondItem="cNG-Zn-RS8" secondAttribute="bottom" constant="10" id="wd7-dF-lnc"/>
                                     <constraint firstItem="lAV-Zb-kVi" firstAttribute="top" secondItem="OTB-Eq-82H" secondAttribute="bottom" constant="10" id="yfV-dZ-pIK"/>
                                 </constraints>
@@ -64,7 +70,7 @@
                                 <rect key="frame" x="0.0" y="0.0" width="100" height="150.5"/>
                                 <subviews>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="69d-tQ-7S9">
-                                        <rect key="frame" x="25" y="50" width="50" height="50"/>
+                                        <rect key="frame" x="25" y="70.5" width="50" height="50"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="50" id="DH0-iO-eSz"/>
                                             <constraint firstAttribute="height" constant="50" id="x1D-cy-1hR"/>
@@ -74,7 +80,7 @@
                                 <color key="backgroundColor" red="0.0" green="0.78006784539473684" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstItem="69d-tQ-7S9" firstAttribute="centerX" secondItem="fNh-lL-UOZ" secondAttribute="centerX" id="5zs-KC-GI8"/>
-                                    <constraint firstItem="69d-tQ-7S9" firstAttribute="centerY" secondItem="fNh-lL-UOZ" secondAttribute="centerY" id="LYB-yb-biT"/>
+                                    <constraint firstItem="69d-tQ-7S9" firstAttribute="centerY" secondItem="fNh-lL-UOZ" secondAttribute="centerY" constant="20" id="LYB-yb-biT"/>
                                     <constraint firstAttribute="width" constant="100" id="a9N-4F-6W2"/>
                                 </constraints>
                             </view>

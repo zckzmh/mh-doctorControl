@@ -9,5 +9,5 @@
 #import <UIKit/UIKit.h>
 
 @interface WebViewInfoViewController : UIViewController
-
+@property (nonatomic ,strong) NSString *webName; /*webName*/
 @end

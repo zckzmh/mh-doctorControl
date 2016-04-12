@@ -102,7 +102,7 @@
 		FED231151CB552BB00531E30 /* QRCodeTopRight@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FED231051CB552BB00531E30 /* QRCodeTopRight@2x.png */; };
 		FED231161CB552BB00531E30 /* QRCodeTopRight@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = FED231061CB552BB00531E30 /* QRCodeTopRight@3x.png */; };
 		FED231191CB565ED00531E30 /* WebViewInfoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FED231181CB565ED00531E30 /* WebViewInfoViewController.m */; };
-		FED2311B1CB5678500531E30 /* web in Resources */ = {isa = PBXBuildFile; fileRef = FED2311A1CB5678500531E30 /* web */; };
+		FED2311D1CB67E3100531E30 /* webpart in Resources */ = {isa = PBXBuildFile; fileRef = FED2311C1CB67E3100531E30 /* webpart */; };
 		FEF689B61CAEBD0C00595F93 /* DoctorFunctionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FEF689B51CAEBD0C00595F93 /* DoctorFunctionViewController.m */; };
 		FEF689BA1CB00CC000595F93 /* DoctorInfoTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = FEF689B81CB00CC000595F93 /* DoctorInfoTableViewCell.m */; };
 		FEF689BB1CB00CC000595F93 /* DoctorInfoTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FEF689B91CB00CC000595F93 /* DoctorInfoTableViewCell.xib */; };
@@ -304,7 +304,7 @@
 		FED231061CB552BB00531E30 /* QRCodeTopRight@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "QRCodeTopRight@3x.png"; sourceTree = "<group>"; };
 		FED231171CB565ED00531E30 /* WebViewInfoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WebViewInfoViewController.h; sourceTree = "<group>"; };
 		FED231181CB565ED00531E30 /* WebViewInfoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WebViewInfoViewController.m; sourceTree = "<group>"; };
-		FED2311A1CB5678500531E30 /* web */ = {isa = PBXFileReference; lastKnownFileType = folder; path = web; sourceTree = "<group>"; };
+		FED2311C1CB67E3100531E30 /* webpart */ = {isa = PBXFileReference; lastKnownFileType = folder; path = webpart; sourceTree = "<group>"; };
 		FEF689B41CAEBD0C00595F93 /* DoctorFunctionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DoctorFunctionViewController.h; sourceTree = "<group>"; };
 		FEF689B51CAEBD0C00595F93 /* DoctorFunctionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DoctorFunctionViewController.m; sourceTree = "<group>"; };
 		FEF689B71CB00CC000595F93 /* DoctorInfoTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DoctorInfoTableViewCell.h; sourceTree = "<group>"; };
@@ -366,7 +366,7 @@
 		FE09433E1C856D6000D6ABC7 = {
 			isa = PBXGroup;
 			children = (
-				FED2311A1CB5678500531E30 /* web */,
+				FED2311C1CB67E3100531E30 /* webpart */,
 				FE0943491C856D6000D6ABC7 /* mh-doctorControl */,
 				FE0943631C856D6000D6ABC7 /* mh-doctorControlTests */,
 				FE09436E1C856D6000D6ABC7 /* mh-doctorControlUITests */,
@@ -1005,6 +1005,7 @@
 				FE8214601CB3FC2C00846DED /* ConsultRecorTableViewCell.xib in Resources */,
 				FED231131CB552BB00531E30 /* QRCodeTopLeft@2x.png in Resources */,
 				FE3EEDA91CA8DB7600A5B685 /* unicode_to_hanyu_pinyin.txt in Resources */,
+				FED2311D1CB67E3100531E30 /* webpart in Resources */,
 				FE97C1401CABBDD400AAD915 /* DoctorInfo.plist in Resources */,
 				FED231121CB552BB00531E30 /* QRCodeLine@3x.png in Resources */,
 				FED231101CB552BB00531E30 /* QRCodeBottomRight@3x.png in Resources */,
@@ -1012,7 +1013,6 @@
 				FE09439E1C8580CB00D6ABC7 /* LaunchScreen.storyboard in Resources */,
 				FE0FA0241C9F9B290042FC3E /* DoctorInfoViewController.xib in Resources */,
 				FE0943A31C85D3DD00D6ABC7 /* Assets.xcassets in Resources */,
-				FED2311B1CB5678500531E30 /* web in Resources */,
 				FED231141CB552BB00531E30 /* QRCodeTopLeft@3x.png in Resources */,
 				FED231151CB552BB00531E30 /* QRCodeTopRight@2x.png in Resources */,
 				FED231161CB552BB00531E30 /* QRCodeTopRight@3x.png in Resources */,
