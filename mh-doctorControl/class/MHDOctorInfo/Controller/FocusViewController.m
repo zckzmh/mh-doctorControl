@@ -8,71 +8,86 @@
 #define BoundWidth [[UIScreen mainScreen]bounds].size.width
 #define BoundHeight [[UIScreen mainScreen]bounds].size.height
 #import "FocusViewController.h"
-
+#import "FMDatabase.h"
+#import "DoctorInfoModel.h"
+#import "FamousDoctorTableViewCell.h"
 @interface FocusViewController ()<UITableViewDelegate,UITableViewDataSource>
 @property (nonatomic ,strong) UITableView *tableView; /*tableView*/
+@property (nonatomic ,strong) NSMutableArray *dataSource; /*dataSource*/
 @end
 
 @implementation FocusViewController
+
+static NSString *famousDcotorID = @"famousDcotorID";
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.title = @"我的关注";
     self.view.backgroundColor = [UIColor colorWithRed:248/255.0 green:248/255.0 blue:248/255.0 alpha:1.0];
+    [self getUserDatabase];
+    [self.tableView registerNib:[UINib nibWithNibName:NSStringFromClass([FamousDoctorTableViewCell class]) bundle:nil] forCellReuseIdentifier:famousDcotorID];
+    
     [self.view addSubview:self.tableView];
+    
+}
+-(void)getUserDatabase{
+    NSString *dbpath = @"/Users/minghanzhao/Desktop/毕业设计/mh-doctorControl/doctor.sqlite";
+    FMDatabase* db = [FMDatabase databaseWithPath:dbpath];
+    [db open];
+    FMResultSet *rs = [db executeQuery:@"select doctorInfo.dname,doctorInfo.dposition,doctorInfo.dhospital,dgoodAt,imagePath,dintroduce,doffice from doctorInfo,myFocus where myFocus.dname = doctorInfo.dname"];
+    while ([rs next]) {
+        DoctorInfoModel *model = [[DoctorInfoModel alloc] init];
+        model.dname = [rs stringForColumn:@"dname"];
+        model.dposition = [rs stringForColumn:@"dposition"];
+        model.dhospital = [rs stringForColumn:@"dhospital"];
+        model.dgoodat = [rs stringForColumn:@"dgoodAt"];
+        model.imagePath = [rs stringForColumn:@"imagePath"];
+        model.dintroduce = [rs stringForColumn:@"dintroduce"];
+        model.doffice = [rs stringForColumn:@"doffice"];
+        [self.dataSource addObject:model];
+
+    }
+    //        if ([db open])
+    //        {
+    //            //4.创表
+    //            BOOL result = [db executeUpdate:@"INSERT INTO allpeople (id, firstname) VALUES (?,?);",@(2),@"zhe"];
+    //
+    //            BOOL result = [db executeUpdate:@"CREATE TABLE myTeam(id integer not NULL primary key,userid integer,dname varchar,foreign key (userid) references userInfo(userid),foreign key (dname) references doctorInfo(dname));"];
+    //            if (result)
+    //            {
+    //                NSLog(@"创建表成功");
+    //            }
+    
+    [db close];
+    
+    
+}
+#pragma mark - UITableViewDelegate
+- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
+    return self.dataSource.count;
 }
 
-#pragma mark - UITableViewDelegate
--(NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
-{
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
     return 1;
 }
 
--(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
-{
-    
-    return 7;
+-(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
+    return 120;
 }
-
-- (CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section
-{
-    return 10;
+-(CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section{
+    return 8;
+}
+-(CGFloat)tableView:(UITableView *)tableView heightForFooterInSection:(NSInteger)section{
+    return 1;
 }
 
 -(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"Cell"];
-    if (cell == nil) {
-        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"Cell"];
-    }
-    else
-    {
-        while ([cell.contentView.subviews lastObject] != nil) {
-            [(UIView *)[cell.contentView.subviews lastObject] removeFromSuperview];
-        }
-    }
-    cell.textLabel.text = @"我的关注";
-    cell.textLabel.font = [UIFont systemFontOfSize:14];
-//    NSDictionary *dic=[self.source objectAtIndex:indexPath.row];
-//    UIImageView *imageView=[[UIImageView alloc]initWithFrame:CGRectMake(20, 8, 64, 64)];
-//    
-//    imageView.image = [UIImage imageNamed:[dic objectForKey:@"imageArray"]];
-//    [cell.contentView addSubview:imageView];
-//    imageView.layer.cornerRadius = 10.0;
-//    imageView.layer.masksToBounds = YES;
-//    UILabel *titleLabel=[[UILabel alloc]initWithFrame:CGRectMake(108, 8, BoundWidth-116, 20)];
-//    
-//    titleLabel.text = [dic objectForKey:@"titleArray"];
-//    titleLabel.font = [UIFont systemFontOfSize:14];
-//    [cell.contentView addSubview:titleLabel];
-//    
-//    UILabel *contentLabel=[[UILabel alloc]initWithFrame:CGRectMake(108, 36, BoundWidth-116, 36)];
-//    contentLabel.textColor=[UIColor lightGrayColor];
-//    contentLabel.font = [UIFont systemFontOfSize:10];
-//    contentLabel.text = [dic objectForKey:@"contentArray"];
-//    contentLabel.numberOfLines=2;
-//    [cell.contentView addSubview:contentLabel];
-    
+    FamousDoctorTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:famousDcotorID];
+    cell.selectionStyle = UITableViewCellSelectionStyleNone;
+    DoctorInfoModel *model = [self.dataSource objectAtIndex:indexPath.section];
+    cell.doctorModel = model;
+    cell.key = @"1";
     return cell;
     
 }
@@ -94,5 +109,10 @@
     }
     return _tableView;
 }
-
+-(NSMutableArray *)dataSource{
+    if (!_dataSource) {
+        _dataSource = [[NSMutableArray alloc] init];
+    }
+    return _dataSource;
+}
 @end

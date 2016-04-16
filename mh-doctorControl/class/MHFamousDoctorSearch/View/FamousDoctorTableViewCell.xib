@@ -113,16 +113,32 @@
                                             <constraint firstAttribute="width" constant="20" id="pzP-0r-uie"/>
                                         </constraints>
                                     </imageView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eGj-En-HxE">
+                                        <rect key="frame" x="175" y="10" width="50" height="25"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="50" id="i0h-kf-9th"/>
+                                            <constraint firstAttribute="height" constant="25" id="nlG-NH-txj"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                        <state key="normal" title="+关注">
+                                            <color key="titleColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="focusDoctor:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="fW1-GP-RqA"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstItem="4SC-MW-gNE" firstAttribute="top" secondItem="QdQ-Ld-JWM" secondAttribute="bottom" constant="8" id="8hH-ja-tr7"/>
                                     <constraint firstItem="ICx-17-Tky" firstAttribute="leading" secondItem="4SC-MW-gNE" secondAttribute="trailing" constant="10" id="9Ae-XH-w0f"/>
                                     <constraint firstItem="rsq-Ya-yhx" firstAttribute="leading" secondItem="4SC-MW-gNE" secondAttribute="leading" id="C3B-7u-qFa"/>
+                                    <constraint firstItem="eGj-En-HxE" firstAttribute="top" secondItem="mRO-Io-ZNf" secondAttribute="top" id="Kf3-7T-Pwv"/>
                                     <constraint firstItem="rsq-Ya-yhx" firstAttribute="top" secondItem="4SC-MW-gNE" secondAttribute="bottom" constant="8" id="Kub-XN-nO9"/>
                                     <constraint firstItem="mRO-Io-ZNf" firstAttribute="top" secondItem="7dV-ZC-VOU" secondAttribute="top" constant="10" id="OVb-hQ-BFW"/>
                                     <constraint firstItem="ICx-17-Tky" firstAttribute="centerY" secondItem="4SC-MW-gNE" secondAttribute="centerY" id="QEc-bH-Xd5"/>
                                     <constraint firstAttribute="trailing" secondItem="mRO-Io-ZNf" secondAttribute="trailing" constant="20" id="aW3-rR-ev1"/>
+                                    <constraint firstItem="mRO-Io-ZNf" firstAttribute="leading" secondItem="eGj-En-HxE" secondAttribute="trailing" constant="11" id="biq-Pt-Vmx"/>
                                     <constraint firstItem="QdQ-Ld-JWM" firstAttribute="top" secondItem="7dV-ZC-VOU" secondAttribute="top" constant="10" id="kAM-5a-kmm"/>
                                     <constraint firstItem="QdQ-Ld-JWM" firstAttribute="leading" secondItem="7dV-ZC-VOU" secondAttribute="leading" constant="5" id="qrP-ti-yaX"/>
                                     <constraint firstItem="4SC-MW-gNE" firstAttribute="leading" secondItem="QdQ-Ld-JWM" secondAttribute="leading" id="sEE-Bs-ByA"/>
@@ -183,6 +199,7 @@
             </tableViewCellContentView>
             <connections>
                 <outlet property="addressLabel" destination="4SC-MW-gNE" id="njr-0R-TMr"/>
+                <outlet property="focusBtn" destination="eGj-En-HxE" id="uIk-OP-rZ7"/>
                 <outlet property="goodatLabel" destination="rsq-Ya-yhx" id="vZ3-fB-yg3"/>
                 <outlet property="headImageView" destination="fkt-lL-gsD" id="Omw-bD-Jvj"/>
                 <outlet property="nameLabel" destination="QdQ-Ld-JWM" id="I4Y-FX-aNx"/>

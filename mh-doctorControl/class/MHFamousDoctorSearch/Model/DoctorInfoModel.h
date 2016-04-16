@@ -15,5 +15,5 @@
 @property (nonatomic ,strong) NSString *dhospital; /*医院*/
 @property (nonatomic ,strong) NSString *doffice; /*科室*/
 @property (nonatomic ,strong) NSString *dgoodat; /*擅长*/
-@property (nonatomic ,strong) NSString *dintroduce; /*<##>*/
+@property (nonatomic ,strong) NSString *dintroduce; /*介绍*/
 @end

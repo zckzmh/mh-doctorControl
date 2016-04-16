@@ -10,4 +10,5 @@
 #import "DoctorInfoModel.h"
 @interface FamousDoctorTableViewCell : UITableViewCell
 @property (nonatomic ,strong) DoctorInfoModel *doctorModel; /*doctorModel*/
+@property (nonatomic ,strong)  NSString *key; /*key*/
 @end

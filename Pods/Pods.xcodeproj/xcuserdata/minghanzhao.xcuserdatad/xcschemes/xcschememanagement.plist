@@ -9,6 +9,11 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>FMDB.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>FlatUIKit.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -42,17 +47,7 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>3966209274CDCCB02C46F0CD7CCC740F</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>3E058D2E5C7C9808D45E1C3419B26498</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>606069DDB73BA25386717B88C4BC4AFC</key>
+		<key>66D91C02C952E1BEF4D053FFE7FB6B5B</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -62,7 +57,22 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>9EB78E27801627F1C1F7A0D35802A94B</key>
+		<key>9F12FB4A63E20F601CFB2E64A65B57C1</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>DC1B5B2EE05E370AF3F3F5586A744EB7</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>DDDA1FFD48B6B7F585673D4B747B4CB0</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>EEB7B780AA3C0FC9042F37AA976B85FC</key>
 		<dict>
 			<key>primary</key>
 			<true/>
