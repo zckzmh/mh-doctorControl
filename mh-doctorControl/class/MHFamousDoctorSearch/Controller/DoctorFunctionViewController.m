@@ -10,6 +10,8 @@
 #import "DoctorFunctionViewController.h"
 #import "DoctorInfoTableViewCell.h"
 #import "InfoChooseViewController.h"
+#import "FMDatabase.h"
+#import "DoctorIntroduceViewController.h"
 @interface DoctorFunctionViewController ()<UITableViewDelegate,UITableViewDataSource>
 @property (nonatomic ,strong) UITableView *tableView; /*tableView*/
 @property (nonatomic ,strong) InfoChooseViewController *infoVC; /*infoVC*/
@@ -20,6 +22,9 @@
 @end
 
 @implementation DoctorFunctionViewController
+{
+    NSString *name;
+}
 static NSString *doctorInfoID = @"doctorInfoID";
 static NSString *doctorIntroduceID = @"doctorIntroduceID";
 - (void)viewDidLoad {
@@ -35,14 +40,18 @@ static NSString *doctorIntroduceID = @"doctorIntroduceID";
     self.tableView.tableFooterView = self.infoVC.view;
     [self addChildViewController:self.infoVC];
     [self.infoVC didMoveToParentViewController:self];
+    
+    [self.addprivateDocBtn addTarget:self action:@selector(addprivateDoctor) forControlEvents:UIControlEventTouchUpInside];
+    NSUserDefaults *userDefaultes = [NSUserDefaults standardUserDefaults];
+    name = [userDefaultes stringForKey:@"name"];
 }
 -(void)viewWillAppear:(BOOL)animated{
     [super viewWillAppear:animated];
     self.automaticallyAdjustsScrollViewInsets = NO;
 //    self.navigationController.navigationBar.barTintColor = [UIColor colorWithRed:0 green:199/255.0 blue:255/255.0 alpha:1.0];
     [self.navigationController.navigationBar setBackgroundImage:[[UIImage alloc] init] forBarMetrics:UIBarMetricsDefault];
-    [self.navigationController.navigationBar setShadowImage:[[UIImage alloc] init]];
-
+//    [self.navigationController.navigationBar setShadowImage:[[UIImage alloc] init]];
+     self.navigationController.navigationBar.clipsToBounds = YES;
     UIBarButtonItem *backBtnItem = [[UIBarButtonItem alloc] initWithImage:[UIImage imageNamed:@"navigationbar_back_white"] style:UIBarButtonItemStylePlain target:self action:@selector(backPage)];
     [backBtnItem setTintColor:[UIColor whiteColor]];
     self.navigationItem.leftBarButtonItem = backBtnItem;
@@ -51,6 +60,46 @@ static NSString *doctorIntroduceID = @"doctorIntroduceID";
 -(void)viewWillDisappear:(BOOL)animated{
     [super viewWillDisappear:animated];
      self.navigationController.navigationBar.barTintColor = [UIColor whiteColor];
+}
+-(void)addprivateDoctor{
+    UIAlertController *exitOrNot = [UIAlertController alertControllerWithTitle:nil message:@"确定添加该医生到我的团队？" preferredStyle:UIAlertControllerStyleAlert];
+    UIAlertAction *downloadAction = [UIAlertAction actionWithTitle:@"确定" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
+        [self getUserDatabase];
+    }];
+    UIAlertAction *cancelAction = [UIAlertAction actionWithTitle:@"取消" style:UIAlertActionStyleCancel handler:^(UIAlertAction * _Nonnull action) {
+        
+    }];
+    [exitOrNot addAction:downloadAction];
+    [exitOrNot addAction:cancelAction];
+    [self presentViewController:exitOrNot animated:YES completion:^{
+        
+    }];
+}
+-(void)getUserDatabase{
+    NSString *dbpath = @"/Users/minghanzhao/Desktop/毕业设计/mh-doctorControl/doctor.sqlite";
+    FMDatabase* db = [FMDatabase databaseWithPath:dbpath];
+    [db open];
+    //    FMResultSet *rs = [db executeQuery:@"select * from userInfo"];
+    //    while ([rs next]) {
+    //        NSLog(@"%@",
+    //              [rs stringForColumn:@"name"]);
+    //        NSUserDefaults *userDefaults = [NSUserDefaults standardUserDefaults];
+    //        [userDefaults setObject:[rs stringForColumn:@"name"] forKey:@"name"];
+    //    }
+    if ([db open])
+    {
+        //4.创表
+        BOOL result = [db executeUpdate:@"INSERT INTO myTeam (userid,dname) VALUES (?,?);",name,self.doctorModel.dname];
+        
+        //                BOOL result = [db executeUpdate:@"CREATE TABLE myTeam(id integer not NULL primary key,userid integer,dname varchar,foreign key (userid) references userInfo(userid),foreign key (dname) references doctorInfo(dname));"];
+        if (result)
+        {
+            NSLog(@"插入成功");
+        }
+        
+        [db close];
+        
+    }
 }
 -(void)backPage{
     [self.navigationController popViewControllerAnimated:YES];
@@ -94,10 +143,11 @@ static NSString *doctorIntroduceID = @"doctorIntroduceID";
 
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
-    //    if (indexPath.row == 1) {
-//        InfoChooseViewController *vc = [[InfoChooseViewController alloc] init];
-//        [self.navigationController pushViewController:vc animated:YES];
-//    }
+        if (indexPath.row == 1) {
+        DoctorIntroduceViewController *vc = [[DoctorIntroduceViewController alloc] init];
+            vc.model = self.doctorModel;
+        [self.navigationController pushViewController:vc animated:YES];
+    }
 }
 -(UITableView *)tableView{
     if (!_tableView) {

@@ -259,7 +259,7 @@
     if (!_dataSource) {
         _dataSource=[[NSMutableArray alloc]init];
         NSArray *imageArray=@[@"famousDoc",@"hospitalDoc",@"doctorChat",@"scanCode"];
-        NSArray *nameArray=@[@"名医搜索",@"院内名医",@"医生论坛",@"扫一扫"];
+        NSArray *nameArray=@[@"名医搜索",@"院内名医",@"临床指南",@"扫一扫"];
         
         for (int i=0; i<4; i++) {
             NSDictionary *dic=@{@"image":[imageArray objectAtIndex:i],@"name":[nameArray objectAtIndex:i]};

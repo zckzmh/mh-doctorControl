@@ -129,8 +129,9 @@
     [progress addObserver:self forKeyPath:@"completedUnitCount" options:NSKeyValueObservingOptionNew context:nil];
     [task resume];
 
-    [SVProgressHUD setDefaultMaskType:SVProgressHUDMaskTypeBlack];
-    [SVProgressHUD showProgress:0 status:@"正在下载..."];
+    [SVProgressHUD setDefaultMaskType:SVProgressHUDMaskTypeNone];
+//    [SVProgressHUD showProgress:0 status:@"正在下载..."];
+//    [SVProgressHUD showWithStatus:@"正在下载..."];
     [self performSelector:@selector(increaseProgress) withObject:nil afterDelay:0.3f];
 
     self.completionBlock = completion;
@@ -142,10 +143,11 @@
 
 #pragma - SVProgress showProgress private method
 - (void)increaseProgress {
-    [SVProgressHUD showProgress:self.progressFloat status:@"正在下载..."];
-    if(self.progressFloat < 1.0f)
-        [self performSelector:@selector(increaseProgress) withObject:nil afterDelay:0.3f];
-    else
+    [SVProgressHUD showWithStatus:@"正在下载..."];
+//    [SVProgressHUD showProgress:self.progressFloat status:@"正在下载..."];
+//    if(self.progressFloat < 1.0f)
+//        [self performSelector:@selector(increaseProgress) withObject:nil afterDelay:0.3f];
+//    else
         [self performSelector:@selector(dismiss) withObject:nil afterDelay:0.4f];
 }
 - (void)dismiss {

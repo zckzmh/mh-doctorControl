@@ -103,6 +103,7 @@
 		FED231161CB552BB00531E30 /* QRCodeTopRight@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = FED231061CB552BB00531E30 /* QRCodeTopRight@3x.png */; };
 		FED231191CB565ED00531E30 /* WebViewInfoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FED231181CB565ED00531E30 /* WebViewInfoViewController.m */; };
 		FED2311D1CB67E3100531E30 /* webpart in Resources */ = {isa = PBXBuildFile; fileRef = FED2311C1CB67E3100531E30 /* webpart */; };
+		FEDE6A071CC5420000581910 /* DoctorIntroduceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FEDE6A061CC5420000581910 /* DoctorIntroduceViewController.m */; };
 		FEF689B61CAEBD0C00595F93 /* DoctorFunctionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FEF689B51CAEBD0C00595F93 /* DoctorFunctionViewController.m */; };
 		FEF689BA1CB00CC000595F93 /* DoctorInfoTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = FEF689B81CB00CC000595F93 /* DoctorInfoTableViewCell.m */; };
 		FEF689BB1CB00CC000595F93 /* DoctorInfoTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FEF689B91CB00CC000595F93 /* DoctorInfoTableViewCell.xib */; };
@@ -305,6 +306,8 @@
 		FED231171CB565ED00531E30 /* WebViewInfoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WebViewInfoViewController.h; sourceTree = "<group>"; };
 		FED231181CB565ED00531E30 /* WebViewInfoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WebViewInfoViewController.m; sourceTree = "<group>"; };
 		FED2311C1CB67E3100531E30 /* webpart */ = {isa = PBXFileReference; lastKnownFileType = folder; path = webpart; sourceTree = "<group>"; };
+		FEDE6A051CC5420000581910 /* DoctorIntroduceViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DoctorIntroduceViewController.h; sourceTree = "<group>"; };
+		FEDE6A061CC5420000581910 /* DoctorIntroduceViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DoctorIntroduceViewController.m; sourceTree = "<group>"; };
 		FEF689B41CAEBD0C00595F93 /* DoctorFunctionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DoctorFunctionViewController.h; sourceTree = "<group>"; };
 		FEF689B51CAEBD0C00595F93 /* DoctorFunctionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DoctorFunctionViewController.m; sourceTree = "<group>"; };
 		FEF689B71CB00CC000595F93 /* DoctorInfoTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DoctorInfoTableViewCell.h; sourceTree = "<group>"; };
@@ -601,6 +604,8 @@
 				FEF689C31CB153E900595F93 /* PatientCommentTableViewController.m */,
 				FEF689C51CB15D6F00595F93 /* InfoChooseViewController.h */,
 				FEF689C61CB15D6F00595F93 /* InfoChooseViewController.m */,
+				FEDE6A051CC5420000581910 /* DoctorIntroduceViewController.h */,
+				FEDE6A061CC5420000581910 /* DoctorIntroduceViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -1166,6 +1171,7 @@
 				FE0FA0271C9F9B290042FC3E /* HomeViewController.m in Sources */,
 				FE8214B61CB4170200846DED /* ReaderThumbQueue.m in Sources */,
 				FE6262F61CB2B0C000C02B47 /* UIImage+Image.m in Sources */,
+				FEDE6A071CC5420000581910 /* DoctorIntroduceViewController.m in Sources */,
 				FED2310A1CB552BB00531E30 /* QRCodeReaderMaskView.m in Sources */,
 				FED2310B1CB552BB00531E30 /* QRCodeReaderView.m in Sources */,
 				FEF689C71CB15D6F00595F93 /* InfoChooseViewController.m in Sources */,
