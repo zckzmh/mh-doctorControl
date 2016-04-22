@@ -17,20 +17,32 @@
 @end
 
 @implementation TeamViewController
+{
+    NSString *name;
+}
 static NSString *myTeamID = @"myTeamID";
 - (void)viewDidLoad {
     [super viewDidLoad];
      self.title = @"我的团队";
     self.view.backgroundColor = [UIColor colorWithRed:248/255.0 green:248/255.0 blue:248/255.0 alpha:1.0];
-    [self getUserDatabase];
     [self.tableView registerNib:[UINib nibWithNibName:NSStringFromClass([FamousDoctorTableViewCell class]) bundle:nil] forCellReuseIdentifier:myTeamID];
     [self.view addSubview:self.tableView];
+}
+-(void)viewWillAppear:(BOOL)animated{
+    [super viewWillAppear:animated];
+    NSUserDefaults *userDefaultes = [NSUserDefaults standardUserDefaults];
+    name = [userDefaultes stringForKey:@"name"];
+    if (self.dataSource.count > 0) {
+        [self.dataSource removeAllObjects];
+    }
+    [self getUserDatabase];
+    [self.tableView reloadData];
 }
 -(void)getUserDatabase{
     NSString *dbpath = @"/Users/minghanzhao/Desktop/毕业设计/mh-doctorControl/doctor.sqlite";
     FMDatabase* db = [FMDatabase databaseWithPath:dbpath];
     [db open];
-    FMResultSet *rs = [db executeQuery:@"select doctorInfo.dname,doctorInfo.dposition,doctorInfo.dhospital,dgoodAt,imagePath,dintroduce,doffice from doctorInfo,myTeam where myTeam.dname = doctorInfo.dname"];
+    FMResultSet *rs = [db executeQuery:@"select doctorInfo.dname,doctorInfo.dposition,doctorInfo.dhospital,dgoodAt,imagePath,dintroduce,doffice from doctorInfo,myTeam where myTeam.dname = doctorInfo.dname and myTeam.userid = ?",name];
     while ([rs next]) {
         DoctorInfoModel *model = [[DoctorInfoModel alloc] init];
         model.dname = [rs stringForColumn:@"dname"];

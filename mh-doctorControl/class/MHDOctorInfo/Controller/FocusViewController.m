@@ -17,7 +17,9 @@
 @end
 
 @implementation FocusViewController
-
+{
+    NSString *name;
+}
 static NSString *famousDcotorID = @"famousDcotorID";
 
 - (void)viewDidLoad {
@@ -30,11 +32,21 @@ static NSString *famousDcotorID = @"famousDcotorID";
     [self.view addSubview:self.tableView];
     
 }
+-(void)viewWillAppear:(BOOL)animated{
+    [super viewWillAppear:animated];
+    NSUserDefaults *userDefaultes = [NSUserDefaults standardUserDefaults];
+    name = [userDefaultes stringForKey:@"name"];
+    if (self.dataSource.count > 0) {
+        [self.dataSource removeAllObjects];
+    }
+    [self getUserDatabase];
+    [self.tableView reloadData];
+}
 -(void)getUserDatabase{
     NSString *dbpath = @"/Users/minghanzhao/Desktop/毕业设计/mh-doctorControl/doctor.sqlite";
     FMDatabase* db = [FMDatabase databaseWithPath:dbpath];
     [db open];
-    FMResultSet *rs = [db executeQuery:@"select doctorInfo.dname,doctorInfo.dposition,doctorInfo.dhospital,dgoodAt,imagePath,dintroduce,doffice from doctorInfo,myFocus where myFocus.dname = doctorInfo.dname"];
+    FMResultSet *rs = [db executeQuery:@"select doctorInfo.dname,doctorInfo.dposition,doctorInfo.dhospital,dgoodAt,imagePath,dintroduce,doffice from doctorInfo,myFocus where myFocus.dname = doctorInfo.dname and myFocus.userid = ?",name];
     while ([rs next]) {
         DoctorInfoModel *model = [[DoctorInfoModel alloc] init];
         model.dname = [rs stringForColumn:@"dname"];

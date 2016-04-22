@@ -81,6 +81,9 @@
 		FE8214BD1CB4170200846DED /* ThumbsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FE82149C1CB4170200846DED /* ThumbsViewController.m */; };
 		FE8214BE1CB4170200846DED /* UIXToolbarView.m in Sources */ = {isa = PBXBuildFile; fileRef = FE82149E1CB4170200846DED /* UIXToolbarView.m */; };
 		FE8214BF1CB4170200846DED /* HLPDFCatagoryHeadView.m in Sources */ = {isa = PBXBuildFile; fileRef = FE8214A11CB4170200846DED /* HLPDFCatagoryHeadView.m */; };
+		FE831EDB1CC62F5000BBAB67 /* CommentDoctorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FE831EDA1CC62F5000BBAB67 /* CommentDoctorViewController.m */; };
+		FE831EE21CC6461600BBAB67 /* LoginStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FE831EDF1CC6461600BBAB67 /* LoginStoryboard.storyboard */; };
+		FE831EE31CC6461600BBAB67 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FE831EE11CC6461600BBAB67 /* LoginViewController.m */; };
 		FE97C13A1CAB7B7F00AAD915 /* FamousDoctorTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = FE97C1381CAB7B7F00AAD915 /* FamousDoctorTableViewCell.m */; };
 		FE97C13B1CAB7B7F00AAD915 /* FamousDoctorTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FE97C1391CAB7B7F00AAD915 /* FamousDoctorTableViewCell.xib */; };
 		FE97C13E1CABB86100AAD915 /* DoctorInfoModel.m in Sources */ = {isa = PBXBuildFile; fileRef = FE97C13D1CABB86100AAD915 /* DoctorInfoModel.m */; };
@@ -274,6 +277,11 @@
 		FE82149E1CB4170200846DED /* UIXToolbarView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIXToolbarView.m; sourceTree = "<group>"; };
 		FE8214A01CB4170200846DED /* HLPDFCatagoryHeadView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HLPDFCatagoryHeadView.h; sourceTree = "<group>"; };
 		FE8214A11CB4170200846DED /* HLPDFCatagoryHeadView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HLPDFCatagoryHeadView.m; sourceTree = "<group>"; };
+		FE831ED91CC62F5000BBAB67 /* CommentDoctorViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CommentDoctorViewController.h; sourceTree = "<group>"; };
+		FE831EDA1CC62F5000BBAB67 /* CommentDoctorViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CommentDoctorViewController.m; sourceTree = "<group>"; };
+		FE831EDF1CC6461600BBAB67 /* LoginStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LoginStoryboard.storyboard; sourceTree = "<group>"; };
+		FE831EE01CC6461600BBAB67 /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
+		FE831EE11CC6461600BBAB67 /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
 		FE97C1371CAB7B7F00AAD915 /* FamousDoctorTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FamousDoctorTableViewCell.h; sourceTree = "<group>"; };
 		FE97C1381CAB7B7F00AAD915 /* FamousDoctorTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FamousDoctorTableViewCell.m; sourceTree = "<group>"; };
 		FE97C1391CAB7B7F00AAD915 /* FamousDoctorTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FamousDoctorTableViewCell.xib; sourceTree = "<group>"; };
@@ -433,6 +441,7 @@
 		FE0FA0001C9F9B290042FC3E /* class */ = {
 			isa = PBXGroup;
 			children = (
+				FE831EDE1CC6461600BBAB67 /* Login */,
 				FE8214611CB4170200846DED /* HLPDFReader */,
 				FE6262D11CB2B0C000C02B47 /* HospitalContacts */,
 				FE27E8971CA2D4AD0036515B /* MHFamousDoctorSearch */,
@@ -606,6 +615,8 @@
 				FEF689C61CB15D6F00595F93 /* InfoChooseViewController.m */,
 				FEDE6A051CC5420000581910 /* DoctorIntroduceViewController.h */,
 				FEDE6A061CC5420000581910 /* DoctorIntroduceViewController.m */,
+				FE831ED91CC62F5000BBAB67 /* CommentDoctorViewController.h */,
+				FE831EDA1CC62F5000BBAB67 /* CommentDoctorViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -851,6 +862,16 @@
 			path = View;
 			sourceTree = "<group>";
 		};
+		FE831EDE1CC6461600BBAB67 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				FE831EDF1CC6461600BBAB67 /* LoginStoryboard.storyboard */,
+				FE831EE01CC6461600BBAB67 /* LoginViewController.h */,
+				FE831EE11CC6461600BBAB67 /* LoginViewController.m */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
 		FED230ED1CB552BB00531E30 /* QRCodeReaderViewController */ = {
 			isa = PBXGroup;
 			children = (
@@ -1006,6 +1027,7 @@
 				FE6262FA1CB2B0C000C02B47 /* HLContactDoctors.plist in Resources */,
 				FED2310F1CB552BB00531E30 /* QRCodeBottomRight@2x.png in Resources */,
 				FED2310E1CB552BB00531E30 /* QRCodeBottomLeft@3x.png in Resources */,
+				FE831EE21CC6461600BBAB67 /* LoginStoryboard.storyboard in Resources */,
 				FE8214A71CB4170200846DED /* HLPDFCatagory.plist in Resources */,
 				FE8214601CB3FC2C00846DED /* ConsultRecorTableViewCell.xib in Resources */,
 				FED231131CB552BB00531E30 /* QRCodeTopLeft@2x.png in Resources */,
@@ -1122,6 +1144,7 @@
 				FE82145F1CB3FC2C00846DED /* ConsultRecorTableViewCell.m in Sources */,
 				FE8214B41CB4170200846DED /* ReaderThumbCache.m in Sources */,
 				FE8214BA1CB4170200846DED /* ReaderThumbView.m in Sources */,
+				FE831EE31CC6461600BBAB67 /* LoginViewController.m in Sources */,
 				FE6262FB1CB2B0C000C02B47 /* HLContactDoctor.m in Sources */,
 				FE3EEDA71CA8DB7600A5B685 /* PinYinForObjc.m in Sources */,
 				FEF689BE1CB0289D00595F93 /* OpenServiceTableViewController.m in Sources */,
@@ -1133,6 +1156,7 @@
 				FE0FA0221C9F9B290042FC3E /* MainViewController.m in Sources */,
 				FE8214AB1CB4170200846DED /* CGPDFDocument.m in Sources */,
 				FE8214A81CB4170200846DED /* HLPDFManager.m in Sources */,
+				FE831EDB1CC62F5000BBAB67 /* CommentDoctorViewController.m in Sources */,
 				FE09434C1C856D6000D6ABC7 /* main.m in Sources */,
 				FE8214B81CB4170200846DED /* ReaderThumbRequest.m in Sources */,
 				FEF689C41CB153E900595F93 /* PatientCommentTableViewController.m in Sources */,

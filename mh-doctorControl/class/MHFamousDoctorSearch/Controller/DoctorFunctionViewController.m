@@ -12,6 +12,7 @@
 #import "InfoChooseViewController.h"
 #import "FMDatabase.h"
 #import "DoctorIntroduceViewController.h"
+#import "CommentDoctorViewController.h"
 @interface DoctorFunctionViewController ()<UITableViewDelegate,UITableViewDataSource>
 @property (nonatomic ,strong) UITableView *tableView; /*tableView*/
 @property (nonatomic ,strong) InfoChooseViewController *infoVC; /*infoVC*/
@@ -42,6 +43,7 @@ static NSString *doctorIntroduceID = @"doctorIntroduceID";
     [self.infoVC didMoveToParentViewController:self];
     
     [self.addprivateDocBtn addTarget:self action:@selector(addprivateDoctor) forControlEvents:UIControlEventTouchUpInside];
+    [self.commentDocBtn addTarget:self action:@selector(commentDoctor) forControlEvents:UIControlEventTouchUpInside];
     NSUserDefaults *userDefaultes = [NSUserDefaults standardUserDefaults];
     name = [userDefaultes stringForKey:@"name"];
 }
@@ -72,6 +74,16 @@ static NSString *doctorIntroduceID = @"doctorIntroduceID";
     [exitOrNot addAction:downloadAction];
     [exitOrNot addAction:cancelAction];
     [self presentViewController:exitOrNot animated:YES completion:^{
+        
+    }];
+}
+-(void)commentDoctor{
+    CommentDoctorViewController *vc = [[CommentDoctorViewController alloc] init];
+    vc.doctModel = self.doctorModel;
+    UINavigationController *nav = [[UINavigationController alloc] initWithRootViewController:vc];
+    vc.title = @"医生评价";
+   
+    [self presentViewController:nav animated:YES completion:^{
         
     }];
 }

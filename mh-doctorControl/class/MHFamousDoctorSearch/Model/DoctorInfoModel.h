@@ -16,4 +16,7 @@
 @property (nonatomic ,strong) NSString *doffice; /*科室*/
 @property (nonatomic ,strong) NSString *dgoodat; /*擅长*/
 @property (nonatomic ,strong) NSString *dintroduce; /*介绍*/
+@property (nonatomic ,strong) NSString *comment; /*comment*/
+@property (nonatomic ,assign) NSInteger starRank; /*starRank*/
+@property (nonatomic ,strong) NSString *username; /*username*/
 @end
