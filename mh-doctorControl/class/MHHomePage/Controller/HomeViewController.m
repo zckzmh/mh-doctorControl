@@ -335,6 +335,7 @@
         _tableView.delegate = self;
         _tableView.dataSource = self;
         _tableView.scrollEnabled = NO;
+        _tableView.contentInset = UIEdgeInsetsMake(0, 0, 44, 0);
     }
     return _tableView;
 }

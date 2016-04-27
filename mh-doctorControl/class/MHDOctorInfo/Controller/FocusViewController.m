@@ -30,10 +30,12 @@ static NSString *famousDcotorID = @"famousDcotorID";
     [self.tableView registerNib:[UINib nibWithNibName:NSStringFromClass([FamousDoctorTableViewCell class]) bundle:nil] forCellReuseIdentifier:famousDcotorID];
     
     [self.view addSubview:self.tableView];
+    self.automaticallyAdjustsScrollViewInsets = NO;
     
 }
 -(void)viewWillAppear:(BOOL)animated{
     [super viewWillAppear:animated];
+    
     NSUserDefaults *userDefaultes = [NSUserDefaults standardUserDefaults];
     name = [userDefaultes stringForKey:@"name"];
     if (self.dataSource.count > 0) {
@@ -43,6 +45,9 @@ static NSString *famousDcotorID = @"famousDcotorID";
     [self.tableView reloadData];
 }
 -(void)getUserDatabase{
+    if (self.dataSource.count >0) {
+        [self.dataSource removeAllObjects];
+    }
     NSString *dbpath = @"/Users/minghanzhao/Desktop/毕业设计/mh-doctorControl/doctor.sqlite";
     FMDatabase* db = [FMDatabase databaseWithPath:dbpath];
     [db open];
@@ -69,6 +74,29 @@ static NSString *famousDcotorID = @"famousDcotorID";
     //            {
     //                NSLog(@"创建表成功");
     //            }
+    
+    [db close];
+    
+    
+}
+
+-(void)deleteUserDatabase:(NSString *)dname{
+    NSString *dbpath = @"/Users/minghanzhao/Desktop/毕业设计/mh-doctorControl/doctor.sqlite";
+    FMDatabase* db = [FMDatabase databaseWithPath:dbpath];
+    [db open];
+
+    //        if ([db open])
+    //        {
+    //            //4.创表
+                BOOL result = [db executeUpdate:@"DELETE FROM myFocus WHERE dname = ?",dname];
+    //
+    //            BOOL result = [db executeUpdate:@"CREATE TABLE myTeam(id integer not NULL primary key,userid integer,dname varchar,foreign key (userid) references userInfo(userid),foreign key (dname) references doctorInfo(dname));"];
+                if (result)
+                {
+                    NSLog(@"删除成功");
+                    [self getUserDatabase];
+                    [self.tableView reloadData];
+                }
     
     [db close];
     
@@ -110,14 +138,29 @@ static NSString *famousDcotorID = @"famousDcotorID";
     
 }
 
+- (BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath {
+    return YES;
+}
+ 
+- (UITableViewCellEditingStyle)tableView:(UITableView *)tableView editingStyleForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    return UITableViewCellEditingStyleDelete;
+}
 
-
+-(void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath{//请求数据源提交的插入或删除指定行接收者。
+    DoctorInfoModel *model = [self.dataSource objectAtIndex:indexPath.section];
+    if (editingStyle ==UITableViewCellEditingStyleDelete) {//如果编辑样式为删除样式
+        [self deleteUserDatabase:model.dname];
+    }
+    
+}
 #pragma mark-懒加载
 -(UITableView *)tableView{
     if (!_tableView) {
         _tableView = [[UITableView alloc] initWithFrame:CGRectMake(0, 0, BoundWidth, BoundHeight) style:UITableViewStyleGrouped];
         _tableView.delegate = self;
         _tableView.dataSource = self;
+        
     }
     return _tableView;
 }
